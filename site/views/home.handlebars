@@ -1,0 +1,21 @@
+
+
+<h1>Hello Express!!! This is my first view!!</h1>
+
+{{#if shitburger}}
+  <h2><strong>{{shitburger}}</strong></h2>
+{{/if}}
+
+<form action="/" method="post">
+  <div>
+    <label for="userName">Please enter your user name:</label>
+    <input type="text" id='userName' name='userName'>
+  </div>
+  <div>
+    <label for="email">Please enter your email address:</label>
+    <input type="text" id='email' name='email'>
+  </div>
+  <div>
+    <button type='submit'>Submit</button>
+  </div>
+</form>

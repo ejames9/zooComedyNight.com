@@ -1,0 +1,36 @@
+{
+  "name": "zoocomedynight.com",
+  "version": "1.0.0",
+  "description": "Web site for AAZK's pseudo-annual Comedy Night at the Zoo.",
+  "main": "zooComedyNight.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "comedy",
+    "night",
+    "comedy",
+    "zoo"
+  ],
+  "author": "Eric James Foster",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.14.1",
+    "mongoose": "^4.5.10",
+    "serve-favicon": "^2.3.0"
+  },
+  "repository": "https://github.com/ejames9/zooComedyNight.com",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "morgan": "^1.7.0"
+  }
+}
