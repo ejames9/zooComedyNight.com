@@ -26,11 +26,17 @@
   },
   "repository": "https://github.com/ejames9/zooComedyNight.com",
   "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
     "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-elementsjs-interpreter": "^1.8.9",
     "gulp-livereload": "^3.8.1",
     "gulp-nodemon": "^2.1.0",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.3.2",
-    "morgan": "^1.7.0"
+    "gulp-webpack": "^1.5.0",
+    "morgan": "^1.7.0",
+    "run-sequence": "^1.2.2",
+    "webpack": "^1.13.2"
   }
 }

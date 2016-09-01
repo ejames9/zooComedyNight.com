@@ -1,0 +1,391 @@
+@import 'https://fonts.googleapis.com/css?family=Bangers|Chau+Philomene+One|Englebert|Fjalla+One|Fresca|Holtwood+One+SC|IM+Fell+DW+Pica|IM+Fell+English+SC|Oranienbaum|Oswald|Palanquin+Dark|Playfair+Display|Rubik+Mono+One|Seymour+One|Teko|Timmana';
+
+/*
+Color variables
+==================>>>
+*/
+
+$bg: #0b0b0b;
+$primary-color: #ede5d0;
+$at-zoo: #e09724;
+$num-3: #8f8f8f;
+$trans: transparent;
+
+/*
+Font variables
+==================>>>
+*/
+
+$primary-font: fresca;
+
+/*
+Num variables
+==================>>>
+*/
+
+$all: 100%;
+
+
+html, body {
+  background-color: $bg;
+  padding-bottom: 0;
+}
+
+h2, p {
+  font-family: $primary-font;
+}
+
+a {
+  padding: 25px 0;
+}
+
+
+
+/*
+Cover Styles
+=================>>
+*/
+
+#nav-logo {
+  font-family: thatsAllFolks;
+  color: $primary-color;
+  font-size: 30px;
+}
+#navbar-wrapper {
+  position: fixed;
+  margin-top: 0;
+  z-index: 15;
+  background-color: $trans;
+}
+
+#navBar {
+  position: fixed;
+  width: $all;
+  // padding: 15px 0;
+  margin-bottom: 0;
+  z-index: 15;
+  border-bottom: .5px solid $num-3;
+  background-color: $trans;
+}
+
+#navbar {
+  float: right;
+  font-family: oswald;
+  font-size: 22px;
+}
+
+#sinceContainer {
+  position: relative;
+  bottom: 13px;
+}
+
+#since {
+  height: 45px;
+  width: 45px;
+  left: 100px;
+  top: 100px;
+  z-index: 10;
+}
+
+#leopardHead {
+  height: $all;
+  width: $all;
+}
+
+#tigerHead {
+  height: $all;
+  width: $all;
+}
+
+#looneyCover {
+  height: $all;
+  width: $all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 14;
+}
+
+#myCarousel {
+  width: $all;
+  height: $all;
+  z-index: 13;
+}
+
+.coverText {
+  position: absolute;
+  z-index: 15;
+}
+
+.allFolks {
+  font-family: thatsAllFolks;
+  font-size: 94px;
+  color: $primary-color;
+  position: absolute;
+  transform: rotateZ(-5deg);
+  z-index: 15;
+}
+
+#presents {
+  left: 270px;
+  top: 80px;
+}
+
+#comedy {
+  left: 210px;
+  top: 460px;
+}
+
+/*
+Bangers|Chau+Philomene+One|Englebert|Fjalla+One|Fresca|Holtwood+One+SC|IM+Fell+DW+Pica|IM+Fell+English+SC|Oranienbaum|Oswald|Palanquin+Dark|Playfair+Display|Rubik+Mono+One|Seymour+One|Teko|Timmana
+bangers, chau philomene one, fresca, holtwood one sc, im fell english sc, oranienbaum, oswald, seymour one, teko,
+bangers, fresca, oranienbaum, oswald, seymour one,
+bangers, fresca, oswald,
+*/
+
+#atZoo {
+  font-family: $primary-font, oswald;
+  font-size: 70px;
+  left: 660px;
+  top: 570px;
+  color: $at-zoo;
+  z-index: 16px;
+}
+
+#n3 {
+  font-family: oswald;
+  font-size: 262px;
+  color: #8f8f8f;
+  z-index: 16;
+  top: 255px;
+  left: 960px;
+  opacity: .8;
+}
+
+#comedyNightPic-1 {
+  position: absolute;
+  top: $all;
+  height: $all;
+  width: $all;
+}
+
+
+/*
+Info Styles
+=================>>
+*/
+
+.item {
+  height: $all;
+  width: $all;
+}
+
+#info-container {
+  z-index: 17;
+  top: $all;
+}
+
+#marketing {
+  /*background-color: $bg;*/
+  padding: 0px;
+  margin-right: 0;
+  margin-left: 0;
+  width: $all;
+  right: 0;
+  left: 0;
+  box-shadow: 0 0 1.2em $bg, 0 0 1.2em $bg, 0 0 1.2em $bg, 0 0 1.2em $bg, 0 0 1.2em $bg, 0 0 1.2em $bg, 0 0 1.2em $bg, 0 0 1.2em $bg;
+}
+
+.img-circle {
+  margin: 0 auto;
+}
+
+#tiger {
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+#sinceBadge {
+  height: 350px;
+  width: 350px;
+}
+
+#feature-0,
+#feature-1,
+#feature-3 {
+  padding: 20px 20px;
+  background-color: $bg;
+  width: $all;
+  opacity: .95;
+}
+
+#feature-1 {
+  opacity: 1;
+  padding-right: 0;
+}
+
+#feature-2 {
+  background-color: $trans;
+
+  h2 {
+    text-shadow: -1px -1px 0 $bg, 1px -1px 0 $bg, -1px 1px 0 $bg, 1px 1px 0 $bg;
+    color: $num-3;
+  }
+
+  p {
+    color: $at-zoo;
+  }
+}
+
+.featurette {
+  padding: 50px 20px;
+}
+
+.dings {
+  font-family: dings2;
+  font-size: 88px;
+  color: $primary-color;
+}
+
+.dings2 {
+  font-family: dings2;
+  font-size: 88px;
+  color: $primary-color;
+}
+
+.dingR {
+  float: right;
+}
+
+/*
+Parallax Effect
+=================>>
+*/
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--front {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+}
+
+/*
+Animations
+=============>>>
+*/
+
+@keyframes whiteHeader {
+  from {
+    background-color: $trans;
+  }
+  to {
+    background-color: $primary-color;
+  }
+}
+
+.whiteHeader {
+  animation-name: whiteHeader;
+  animation-duration: 2s;
+}
+
+@keyframes clearHeader {
+  from {
+    background-color: $primary-color;
+  }
+  to {
+    background-color: $trans;
+  }
+}
+
+.clearHeader {
+  animation-name: clearHeader;
+  animation-duration: 2s;
+}
+
+@keyframes shrinkFont {
+  from {
+    font-size: 30px;
+    color: $primary-color;
+  }
+  to {
+    font-size: 24px;
+    color: $bg;
+  }
+}
+
+.shrinkFont {
+  animation-name: shrinkFont;
+  animation-duration: 2s;
+}
+
+@keyframes expandFont {
+  from {
+    font-size: 24px;
+    color: $bg;
+  }
+  to {
+    font-size: 30px;
+    color: $primary-color;
+  }
+}
+
+.expandFont {
+  animation-name: expandFont;
+  animation-duration: 2s;
+}
+
+
+
+/*
+fonts
+=============>>>
+*/
+
+@font-face {
+  font-family: thatsAllFolks;
+  src: url(../fonts/thatsAllFolks.ttf);
+}
+
+@font-face {
+  font-family: dings;
+  src: url(../fonts/Retrodings.ttf);
+}
+
+@font-face {
+  font-family: dings2;
+  src: url(../fonts/retrodings2.ttf);
+}
+
+@font-face {
+  font-family: sunSpark;
+  src: url(../fonts/sunSpark.ttf);
+}
+
+@font-face {
+  font-family: wildAfrica;
+  src: url(../fonts/wildAfrica.ttf);
+}
+
+@font-face {
+  font-family: zoologic;
+  src: url(../fonts/zoologic.ttf);
+}
+
+@font-face {
+  font-family: quietZoo;
+  src: url(../fonts/quietZoo.ttf);
+}
