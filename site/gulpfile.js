@@ -28,7 +28,7 @@ const webpackConfig = {
 //Preprocess Sass
 gulp.task('sass', ()=> {
   return gulp.src('./public/css/*.scss')
-    .pipe(plumber())
+    // .pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest('./public/css'))
     .pipe(liveload());

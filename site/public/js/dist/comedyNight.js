@@ -73,6 +73,7 @@
 	var scroll = elementsJS.scroll;
 	var on = elementsJS.on;
 	var off = elementsJS.off;
+	var inspect = elementsJS.inspect;
 
 	///End Module requires///
 
@@ -89,7 +90,8 @@
 	        _navLogo_ = function () {
 	        var elem1 = _$('#nav-logo') ? dom('#nav-logo') : make('#nav-logo').put("body");
 	        return elem1;
-	    }();
+	    }(),
+	        _chevrons_ = dom('.chevron scrollIndicator');
 
 	    //If user has scrolled more than 10px, execute animation..
 	    if (_parallax_.scrolled() > 10) {
@@ -98,8 +100,13 @@
 	            _navBar_.class('clearHeader', '-');
 	            _navLogo_.class('expandFont', '-');
 
-	            _navBar_.class('whiteHeader', '+');
+	            _navBar_.class('fillHeader', '+');
 	            _navLogo_.class('shrinkFont', '+');
+
+	            //Stop scroll indicator animation, otherwise user computer will explode..
+	            _chevrons_.every(function (chevron) {
+	                chevron.class('scrollIndicator', '-');
+	            });
 	            //
 	            setTimeout(function () {
 	                _navBar_.bgColor('#ede5d0');
@@ -114,14 +121,16 @@
 	                //
 	                if (_parallax_.scrolled() < 50) {
 	                    //
-	                    _navBar_.class('whiteHeader', '-');
+	                    _navBar_.class('fillHeader', '-');
 	                    _navLogo_.class('shrinkFont', '-');
 
 	                    _navBar_.class('clearHeader', '+');
 	                    _navLogo_.class('expandFont', '+');
-	                    // _navbar_
-	                    //     .color('#8f8f8f');
-	                    //
+
+	                    //Restart scroll indicator animation..
+	                    _chevrons_.every(function (chevron) {
+	                        chevron.class('scrollIndicator', '+');
+	                    });
 	                    //
 	                    setTimeout(function () {
 	                        _navBar_.bgColor('transparent');

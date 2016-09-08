@@ -9,7 +9,7 @@ Author: Eric James Foster
 
 
 //imports..
-use 'elementsJS' el, log, go, scroll, on, off
+use 'elementsJS' el, log, go, scroll, on, off, inspect
 
 
 
@@ -19,7 +19,9 @@ function animateHeader() {
   let _navBar_ = <navBar/>,
       _navbar_ = <navbar/>,
     _parallax_ = <'#parallax'/>,
-     _navLogo_ = <'#nav-logo'/>;
+     _navLogo_ = <'#nav-logo'/>,
+    _chevrons_ = <'.chevron scrollIndicator'/>;
+
 
    //If user has scrolled more than 10px, execute animation..
   if (_parallax_.scrolled() > 10) {
@@ -30,9 +32,16 @@ function animateHeader() {
         .class('expandFont', '-');
 
     _navBar_
-        .class('whiteHeader', '+');
+        .class('fillHeader', '+');
     _navLogo_
         .class('shrinkFont', '+');
+
+    //Stop scroll indicator animation, otherwise user computer will explode..
+    _chevrons_
+        .every((chevron)=> {
+          chevron
+              .class('scrollIndicator', '-');
+        });
     //
     setTimeout(()=> {
       _navBar_
@@ -52,17 +61,21 @@ function animateHeader() {
       if (_parallax_.scrolled() < 50) {
         //
         _navBar_
-            .class('whiteHeader', '-');
+            .class('fillHeader', '-');
         _navLogo_
-          .class('shrinkFont', '-');
+            .class('shrinkFont', '-');
 
         _navBar_
             .class('clearHeader', '+');
         _navLogo_
             .class('expandFont', '+');
-        // _navbar_
-        //     .color('#8f8f8f');
-        //
+
+        //Restart scroll indicator animation..
+        _chevrons_
+            .every((chevron)=> {
+              chevron
+                .class('scrollIndicator', '+');
+            });
         //
         setTimeout(()=> {
           _navBar_

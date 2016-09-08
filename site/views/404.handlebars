@@ -1,4 +1,16 @@
 
+<!--
+404.handlebars
+
+This is the html/view code for the 404 page.
+
+Author: Eric Foster
+-->
+
+
+
+
+{{!-- CSS Section to be inserted into the head of main file --}}
 {{#section '404Style'}}
   <style>
 
@@ -8,8 +20,8 @@
       }
 
       html {
-          background-color: black;
-          color: #888;
+          background-color: #0b0b0b;
+          color: #8f8f8f;
           display: table;
           font-family: sans-serif;
           height: 100%;
@@ -20,7 +32,9 @@
       body {
           display: table-cell;
           vertical-align: middle;
+          text-align: center;
           margin: 2em auto;
+          overflow: hidden;
       }
 
       h1 {
@@ -33,6 +47,7 @@
           margin: 0 auto;
           width: 280px;
       }
+
 
       @media only screen and (max-width: 280px) {
 
@@ -50,8 +65,9 @@
 {{/section}}
 
 
-
-<h1>Fucking Not Found</h1>
-<p>Sorry, but the fucking page you were trying to view does not exist.</p>
+<p id="animals" class='animals'>ABCDEFxHIJKLMNOPQRSTUVWXYZ</p>
+<h1 id='fours'>4 <img src="img/siberianTiger.jpeg" class='img-circle' height="250px" width="250px" alt="Siberian Tiger"> 4</h1>
+<p id="animals2" class='animals'>abcdefghijklmnopqrstuvwGyz</p>
+<p id='sorry'>Sorry, but the page you were trying to view does not exist. <a href='http://zooComedyNight.com'>Meow.</a></p>
 
 <!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->

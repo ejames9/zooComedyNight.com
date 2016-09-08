@@ -1,4 +1,48 @@
-@import 'https://fonts.googleapis.com/css?family=Bangers|Chau+Philomene+One|Englebert|Fjalla+One|Fresca|Holtwood+One+SC|IM+Fell+DW+Pica|IM+Fell+English+SC|Oranienbaum|Oswald|Palanquin+Dark|Playfair+Display|Rubik+Mono+One|Seymour+One|Teko|Timmana';
+@import 'https://fonts.googleapis.com/css?family=Fresca|Oswald';
+@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Fjalla+One|Inconsolata|Josefin+Slab|Maven+Pro|Pathway+Gothic+One|Playfair+Display|Questrial|Roboto+Slab|Rokkitt';
+#fours {
+  font-family: quietZoo;
+  font-size: 372px;
+  color: #e09724;
+  margin: 0; }
+
+.animals {
+  font-family: zoologic;
+  font-size: 38px;
+  position: absolute;
+  float: left;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto; }
+
+#animals {
+  top: 0px; }
+
+#animals2 {
+  bottom: 20px; }
+
+#sorry a {
+  color: #e09724;
+  text-decoration: underline; }
+
+#sorry a:hover {
+  color: #c3242d; }
+
+#sorry a:active {
+  color: #1a68c4; }
+
+.img-circle {
+  border: 13px solid #464b50; }
+
+/*
+zooComedyNight.scss
+
+This is the main Sass file for the zooComedyNight.com
+web application..
+
+Author: Eric James Foster
+*/
 /*
 Color variables
 ==================>>>
@@ -11,15 +55,24 @@ Font variables
 Num variables
 ==================>>>
 */
+/*
+Tag Styles
+==================>>>
+*/
 html, body {
   background-color: #0b0b0b;
   padding-bottom: 0; }
 
-h2, p {
-  font-family: fresca; }
+h3, h2 {
+  font-family: fjalla one; }
 
 a {
-  padding: 25px 0; }
+  padding: 25px 0;
+  color: #c3242d;
+  -moz-outline: 0; }
+
+a:focus {
+  outline: 0; }
 
 /*
 Cover Styles
@@ -46,8 +99,15 @@ Cover Styles
 
 #navbar {
   float: right;
-  font-family: oswald;
-  font-size: 22px; }
+  font-family: fjalla one;
+  font-size: 18px; }
+  #navbar a {
+    color: #8f8f8f; }
+
+#navbar ul li a:active,
+#navbar ul li a:focus {
+  background-color: #0b0b0b;
+  border-radius: 7px; }
 
 #sinceContainer {
   position: relative;
@@ -83,7 +143,7 @@ Cover Styles
 
 .coverText {
   position: absolute;
-  z-index: 15; }
+  z-index: 17; }
 
 .allFolks {
   font-family: thatsAllFolks;
@@ -98,20 +158,14 @@ Cover Styles
   top: 80px; }
 
 #comedy {
-  left: 210px;
+  left: 180px;
   top: 460px; }
 
-/*
-Bangers|Chau+Philomene+One|Englebert|Fjalla+One|Fresca|Holtwood+One+SC|IM+Fell+DW+Pica|IM+Fell+English+SC|Oranienbaum|Oswald|Palanquin+Dark|Playfair+Display|Rubik+Mono+One|Seymour+One|Teko|Timmana
-bangers, chau philomene one, fresca, holtwood one sc, im fell english sc, oranienbaum, oswald, seymour one, teko,
-bangers, fresca, oranienbaum, oswald, seymour one,
-bangers, fresca, oswald,
-*/
 #atZoo {
   font-family: fresca, oswald;
-  font-size: 70px;
-  left: 660px;
-  top: 570px;
+  font-size: 66px;
+  left: 530px;
+  top: 600px;
   color: #e09724;
   z-index: 16px; }
 
@@ -124,16 +178,111 @@ bangers, fresca, oswald,
   left: 960px;
   opacity: .8; }
 
+#coverDate {
+  float: right;
+  right: 60px;
+  top: 310px;
+  font-size: 27px;
+  color: #e09724;
+  text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b; }
+
+#coverLocation {
+  float: right;
+  right: 110px;
+  top: 365px;
+  font-size: 20px;
+  text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b; }
+
+#coverLocation2 {
+  float: right;
+  right: 45px;
+  top: 395px;
+  font-size: 20px;
+  text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b; }
+
+#viewMap {
+  visibility: hidden; }
+
+#map-link {
+  color: #8f8f8f; }
+
+#map-link:hover {
+  color: #4477d0; }
+  #map-link:hover h2 {
+    text-decoration: underline; }
+    #map-link:hover h2 span {
+      visibility: visible; }
+
 #comedyNightPic-1 {
   position: absolute;
   top: 100%;
   height: 100%;
   width: 100%; }
 
+#scrollIndicatorL {
+  position: absolute;
+  float: left;
+  left: 100px;
+  top: 650px;
+  line-height: 0.5;
+  width: 140px; }
+
+#scrollIndicatorR {
+  position: absolute;
+  float: right;
+  right: 40px;
+  top: 650px;
+  line-height: 0.5;
+  width: 100px; }
+
+.chevron {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  display: block;
+  padding-bottom: 0px;
+  border-left: 2px solid #ede5d0;
+  border-bottom: 2px solid #ede5d0;
+  transform: rotateZ(-45deg);
+  opacity: 0.5;
+  z-index: 15; }
+
+#leftTop {
+  top: 11px;
+  z-index: 18; }
+
+#leftMid {
+  z-index: 17; }
+
+#leftBottom {
+  bottom: 11px;
+  z-index: 16; }
+
+#rightTop {
+  top: 11px;
+  z-index: 18; }
+
+#rightMid {
+  z-index: 17; }
+
+#rightBottom {
+  bottom: 11px;
+  z-index: 16; }
+
 /*
-Info Styles
-=================>>
+Features Layout Styles
+=======================>>
 */
+.featurette-divider {
+  border-color: #8f8f8f;
+  border-width: 2px;
+  display: inline-block;
+  margin: 0 20px;
+  width: 85%; }
+
+.featurette-heading {
+  margin-top: 20px; }
+
 .item {
   height: 100%;
   width: 100%; }
@@ -152,53 +301,399 @@ Info Styles
   left: 0;
   box-shadow: 0 0 1.2em #0b0b0b, 0 0 1.2em #0b0b0b, 0 0 1.2em #0b0b0b, 0 0 1.2em #0b0b0b, 0 0 1.2em #0b0b0b, 0 0 1.2em #0b0b0b, 0 0 1.2em #0b0b0b, 0 0 1.2em #0b0b0b; }
 
-.img-circle {
-  margin: 0 auto; }
+.featurette {
+  padding: 0px 20px 60px;
+  vertical-align: middle;
+  margin-top: 0px; }
+  .featurette h2 {
+    font-family: fjalla one;
+    font-size: 42px; }
+  .featurette p {
+    font-family: inconsolata;
+    font-size: 16px; }
+    .featurette p a {
+      color: #c3242d; }
+
+#feature-0,
+#feature-4,
+#feature-1,
+#feature-3 {
+  padding: 20px 20px;
+  background-color: #0b0b0b;
+  width: 100%;
+  opacity: .98; }
+
+#feature-0 {
+  padding-top: 0;
+  text-align: center; }
+  #feature-0 h3 {
+    font-family: fjalla one; }
+  #feature-0 p a {
+    outline: 0; }
+
+#feature-1 {
+  opacity: 1;
+  padding-right: 0;
+  padding-top: 0;
+  text-align: center; }
+
+#feature-2 {
+  padding-top: 0px;
+  background-color: transparent; }
+  #feature-2 h2 {
+    text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b;
+    color: #8f8f8f; }
+  #feature-2 p {
+    color: #e09724;
+    text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b; }
+
+#feature-3 {
+  padding-top: 0px; }
+
+#feature-4 {
+  padding-top: 0;
+  text-align: center; }
+
+/*
+Section 1, Hostess
+===================>>>
+*/
+#poisonWaters {
+  width: 365px;
+  height: 441px;
+  position: relative;
+  top: 30px; }
+
+#poisonWatersText {
+  position: relative;
+  top: 50px;
+  right: 50px; }
+  #poisonWatersText h2 {
+    font-family: fjalla one, inconsolata, josefin slab, maven pro, pathway gothic one, playfair display, questrial, roboto slab, rokkitt;
+    font-size: 42px; }
+  #poisonWatersText p {
+    font-family: inconsolata, rokkitt;
+    font-size: 16px; }
+    #poisonWatersText p a {
+      color: #c3242d; }
+
+#poisonWatersFeature {
+  padding-bottom: 0px;
+  margin-bottom: 0px; }
+
+/*
+Section 2, Headliner
+=====================>>>
+*/
+#laughingLeo {
+  position: absolute;
+  top: 590px;
+  left: 70px;
+  border-radius: 25%;
+  opacity: .08; }
+
+#caitW {
+  position: relative;
+  bottom: 10px;
+  left: 15px;
+  border: 10px solid #e09724;
+  border-style: dotted; }
+
+#caitWText {
+  position: relative;
+  left: 100px; }
+
+#caitTwitter {
+  background-color: #0b0b0b;
+  color: #ede5d0;
+  outline: 0; }
+
+#caitTwitter:hover {
+  background-color: #1b69c4;
+  color: #ede5d0;
+  outline: 0; }
+
+#caitTwitter:active,
+#caitTwitter:focus {
+  background-color: #539ef5;
+  color: #ede5d0;
+  outline: 0; }
+
+/*
+Section 3, Event Info
+======================>>>
+*/
+#sinceBadge {
+  height: 350px;
+  width: 350px; }
+
+#eventText {
+  position: relative;
+  right: 60px;
+  bottom: 60px; }
+  #eventText h2 {
+    font-size: 34px; }
+  #eventText a {
+    color: #c3242d; }
+    #eventText a p {
+      color: #c3242d;
+      margin-bottom: 0px; }
+  #eventText p {
+    margin-bottom: 7px; }
+
+#archFeature {
+  padding-bottom: 0;
+  padding-top: 0; }
+
+#sinceBadge {
+  position: relative;
+  bottom: 60px;
+  left: 120px; }
+
+#tixBtn2 {
+  display: inline-block;
+  font-family: inconsolata;
+  font-size: 10px;
+  border: 1px solid #e37c30;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px; }
+
+#tixBtn2:hover {
+  background-color: #0b0b0b; }
+
+#tixBtn2:active {
+  color: #e37c30;
+  background-color: green; }
+
+#donateBtn2 {
+  display: inline-block;
+  font-family: inconsolata;
+  font-size: 10px;
+  border: 1px solid #e37c30;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-bottom: 10px; }
+
+#donateBtn2:hover {
+  background-color: #0b0b0b; }
+
+#donateBtn2:active {
+  color: #e37c30;
+  background-color: green; }
+
+/*
+Section 4, Cause
+=================>>>
+*/
+#causeHead {
+  position: relative;
+  bottom: 70px; }
 
 #tiger {
   right: 0;
   left: 0;
   margin: 0 auto; }
 
-#sinceBadge {
-  height: 350px;
-  width: 350px; }
+.cat-shot {
+  border: 5px solid #ede5d0; }
 
-#feature-0,
-#feature-1,
-#feature-3 {
-  padding: 20px 20px;
+#altaLogo {
+  position: absolute;
+  height: 400px;
+  width: 710px;
+  top: 1580px;
+  left: 280px;
+  opacity: .15;
+  border-radius: 20px; }
+
+#altaTitle {
+  position: relative;
+  bottom: 50px;
+  color: #e37c30;
+  text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b; }
+
+#cause {
+  position: relative;
+  bottom: 25px;
+  margin-bottom: 0; }
+
+.causeBtn {
   background-color: #0b0b0b;
-  width: 100%;
-  opacity: .95; }
+  border: 1px solid #ede5d0;
+  border-radius: 5px;
+  color: #ede5d0; }
 
-#feature-1 {
-  opacity: 1;
-  padding-right: 0; }
+#cbtnCont {
+  position: relative;
+  bottom: 40px; }
 
-#feature-2 {
-  background-color: transparent; }
-  #feature-2 h2 {
-    text-shadow: -1px -1px 0 #0b0b0b, 1px -1px 0 #0b0b0b, -1px 1px 0 #0b0b0b, 1px 1px 0 #0b0b0b;
-    color: #8f8f8f; }
-  #feature-2 p {
-    color: #e09724; }
+#cbtn,
+#cbtn2 {
+  color: #ede5d0; }
 
-.featurette {
-  padding: 50px 20px; }
+#cbtn:hover,
+#cbtn2:hover {
+  background-color: #ede5d0;
+  color: #0b0b0b; }
+
+#cbtn:active,
+#cbtn2:active {
+  background-color: #e37c30;
+  color: #ede5d0; }
+
+.col-lg-6 {
+  position: relative;
+  bottom: 30px; }
+  .col-lg-6 p {
+    text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b; }
+
+/*
+Section 5, AAZK Info
+=====================>>>
+*/
+#aazk {
+  border-radius: 7px;
+  box-shadow: 0 0 0.6em white, 0 0 0.6em white, 0 0 0.6em white, 0 0 0.6em white, 0 0 0.6em white, 0 0 0.6em white, 0 0 0.6em white, 0 0 0.6em white; }
+
+#aazkInfo {
+  position: relative;
+  bottom: 30px; }
+
+#aazkPC {
+  color: #0b0b0b;
+  text-shadow: -1px -1px 0 #ede5d0, 1px -1px 0 #ede5d0, -1px 1px 0 #ede5d0, 1px 1px 0 #ede5d0; }
+
+#aazkHome {
+  background-color: #0b0b0b;
+  border: 1px solid #ede5d0;
+  border-radius: 5px;
+  color: #ede5d0; }
+
+#aazkHome:hover {
+  background-color: #ede5d0;
+  color: #0b0b0b; }
+
+#aazkHome:active {
+  background-color: #0a4683;
+  color: #ede5d0; }
+
+/*
+Footer Styles
+==============>>>
+*/
+#ef {
+  position: relative;
+  margin: 22px 0 15px; }
+
+#bttCont {
+  display: inline-block;
+  font-family: inconsolata;
+  text-align: center;
+  line-height: 0.7;
+  border: 1px solid #ede5d0;
+  border-radius: 50%;
+  padding: 13px 20px;
+  margin-bottom: 20px; }
+  #bttCont span {
+    display: block; }
+
+#bttCont:focus,
+#bttCont:hover,
+#bttCont:active {
+  text-decoration: none; }
+
+#bttCont:hover {
+  box-shadow: 0 0 0.6em #ede5d0, 0 0 0.6em #ede5d0, 0 0 0.6em #ede5d0; }
+
+#bttCont:active {
+  box-shadow: 0 0 0.6em #e09724, 0 0 0.6em #e09724, 0 0 0.6em #e09724, 0 0 0.6em #e09724; }
+
+#tixBtn {
+  position: relative;
+  bottom: 40px;
+  font-family: inconsolata;
+  font-size: 68px;
+  border: 1px solid #e37c30;
+  color: #e37c30;
+  border-radius: 10px; }
+
+#tixBtn:hover {
+  color: #0b0b0b;
+  background-color: #e37c30; }
+
+#tixBtn:active {
+  color: #e37c30;
+  background-color: green; }
+
+#donateBtn {
+  font-family: inconsolata;
+  font-size: 48px;
+  border: 1px solid #e37c30;
+  color: #e37c30;
+  border-radius: 10px;
+  margin-top: 20px; }
+
+#donateBtn:hover {
+  color: #0b0b0b;
+  background-color: #e37c30; }
+
+#donateBtn:active {
+  color: #e37c30;
+  background-color: green; }
+
+/*
+Reusable Classes
+=================>>
+*/
+.red {
+  color: #c3242d; }
+
+.orange {
+  color: #e37c30; }
+
+.primary {
+  color: #ede5d0; }
+
+.at-zoo {
+  color: #e09724; }
+
+.img-circle {
+  margin: 0 auto; }
 
 .dings {
-  font-family: dings2;
-  font-size: 88px;
+  font-family: dings;
+  font-size: 68px;
   color: #ede5d0; }
+
+.center-align {
+  text-align: center; }
 
 .dings2 {
   font-family: dings2;
-  font-size: 88px;
+  font-size: 68px;
   color: #ede5d0; }
 
 .dingR {
   float: right; }
+
+.divide {
+  margin: 0 auto;
+  position: relative;
+  top: 25px; }
+
+.divideCont {
+  text-align: center;
+  position: relative;
+  pointer-events: none;
+  bottom: 64px; }
+
+.divideCont2 {
+  text-align: center;
+  position: relative;
+  bottom: 63px;
+  pointer-events: none; }
 
 /*
 Parallax Effect
@@ -227,14 +722,34 @@ Parallax Effect
 Animations
 =============>>>
 */
-@keyframes whiteHeader {
+@keyframes backToTop {
+  0%, 100% {
+    background-color: transparent;
+    color: #ede5d0; }
+  50% {
+    background-color: #ede5d0;
+    color: #0b0b0b; } }
+
+.backToTop {
+  animation: backToTop 10s infinite; }
+
+@keyframes backToTopIcon {
+  0%, 100% {
+    color: #ede5d0; }
+  50% {
+    color: #0b0b0b; } }
+
+.backToTopIcon {
+  animation: backToTopIcon 10s infinite; }
+
+@keyframes fillHeader {
   from {
     background-color: transparent; }
   to {
     background-color: #ede5d0; } }
 
-.whiteHeader {
-  animation-name: whiteHeader;
+.fillHeader {
+  animation-name: fillHeader;
   animation-duration: 2s; }
 
 @keyframes clearHeader {
