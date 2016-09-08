@@ -1,0 +1,1056 @@
+@import 'https://fonts.googleapis.com/css?family=Fresca|Oswald';
+@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Fjalla+One|Inconsolata|Josefin+Slab|Maven+Pro|Pathway+Gothic+One|Playfair+Display|Questrial|Roboto+Slab|Rokkitt';
+
+
+@import '_404';
+/*
+zooComedyNight.scss
+
+This is the main Sass file for the zooComedyNight.com
+web application..
+
+Author: Eric James Foster
+*/
+
+
+
+
+
+
+/*
+Color variables
+==================>>>
+*/
+
+$bg: #0b0b0b;
+$fg: #ede5d0;
+$at-zoo: #e09724;
+$num-3: #8f8f8f;
+$trans: transparent;
+$orange: #e37c30;
+$red: #c3242d;
+
+/*
+Font variables
+==================>>>
+*/
+
+$fresca: fresca;
+$headers: fjalla one;
+$pGraphs: inconsolata;
+
+/*
+Num variables
+==================>>>
+*/
+
+$all: 100%;
+
+
+
+
+/*
+Tag Styles
+==================>>>
+*/
+
+
+html, body {
+  background-color: $bg;
+  padding-bottom: 0;
+}
+
+h3, h2  {
+  font-family: $headers;
+}
+
+a {
+  padding: 25px 0;
+  color: $red;
+  -moz-outline: 0;
+}
+
+
+a:focus, {
+  outline: 0;
+
+}
+
+
+
+/*
+Cover Styles
+=================>>
+*/
+
+#nav-logo {
+  font-family: thatsAllFolks;
+  color: $fg;
+  font-size: 30px;
+}
+#navbar-wrapper {
+  position: fixed;
+  margin-top: 0;
+  z-index: 15;
+  background-color: $trans;
+}
+
+#navBar {
+  position: fixed;
+  width: $all;
+  // padding: 15px 0;
+  margin-bottom: 0;
+  z-index: 15;
+  border-bottom: .5px solid $num-3;
+  background-color: $trans;
+}
+
+#navbar {
+  float: right;
+  font-family: $headers;
+  font-size: 18px;
+  //navbar links..
+  a {
+    color: $num-3;
+  }
+}
+
+#navbar {
+  ul li a:active,
+  ul li a:focus {
+    background-color: $bg;
+    border-radius: 7px;
+  }
+}
+
+#sinceContainer {
+  position: relative;
+  bottom: 13px;
+}
+
+#since {
+  height: 45px;
+  width: 45px;
+  left: 100px;
+  top: 100px;
+  z-index: 10;
+}
+
+#leopardHead {
+  height: $all;
+  width: $all;
+}
+
+#tigerHead {
+  height: $all;
+  width: $all;
+}
+
+#looneyCover {
+  height: $all;
+  width: $all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 14;
+}
+
+#myCarousel {
+  width: $all;
+  height: $all;
+  z-index: 13;
+}
+
+.coverText {
+  position: absolute;
+  z-index: 17;
+}
+
+.allFolks {
+  font-family: thatsAllFolks;
+  font-size: 94px;
+  color: $fg;
+  position: absolute;
+  transform: rotateZ(-5deg);
+  z-index: 15;
+}
+
+#presents {
+  left: 270px;
+  top: 80px;
+}
+
+#comedy {
+  left: 180px;
+  top: 460px;
+}
+
+#atZoo {
+  font-family: $fresca, oswald;
+  font-size: 66px;
+  left: 530px;
+  top: 600px;
+  color: $at-zoo;
+  z-index: 16px;
+}
+
+#n3 {
+  font-family: oswald;
+  font-size: 262px;
+  color: #8f8f8f;
+  z-index: 16;
+  top: 255px;
+  left: 960px;
+  opacity: .8;
+}
+
+#coverDate {
+  float: right;
+  right: 60px;
+  top: 310px;
+  font-size: 27px;
+  color: $at-zoo;
+  text-shadow: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+}
+
+#coverLocation {
+  float: right;
+  right: 110px;
+  top: 365px;
+  font-size: 20px;
+  text-shadow: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+}
+
+#coverLocation2 {
+  float: right;
+  right: 45px;
+  top: 395px;
+  font-size: 20px;
+  text-shadow: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+}
+
+#viewMap {
+  visibility: hidden;
+}
+
+#map-link {
+  color: $num-3;
+}
+
+#map-link:hover {
+  color: #4477d0;
+  h2 {
+    text-decoration: underline;
+    span {
+      visibility: visible;
+    }
+  }
+}
+
+#comedyNightPic-1 {
+  position: absolute;
+  top: $all;
+  height: $all;
+  width: $all;
+}
+
+#scrollIndicatorL {
+  position: absolute;
+  float: left;
+  left: 100px;
+  top: 650px;
+  line-height: 0.5;
+  width: 140px;
+}
+
+#scrollIndicatorR {
+  position: absolute;
+  float: right;
+  right: 40px;
+  top: 650px;
+  line-height: 0.5;
+  width: 100px;
+}
+
+.chevron {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  display: block;
+  padding-bottom: 0px;
+  border-left: 2px solid $fg;
+  border-bottom: 2px solid $fg;
+  transform: rotateZ(-45deg);
+  opacity: 0.5;
+  z-index: 15;
+}
+
+#leftTop {
+  top: 11px;
+  z-index: 18;
+}
+
+#leftMid {
+  z-index: 17;
+}
+
+#leftBottom {
+  bottom: 11px;
+  z-index: 16;
+}
+
+#rightTop {
+  top: 11px;
+  z-index: 18;
+}
+
+#rightMid {
+  z-index: 17;
+}
+
+#rightBottom {
+  bottom: 11px;
+  z-index: 16;
+}
+
+
+/*
+Features Layout Styles
+=======================>>
+*/
+
+
+.featurette-divider {
+  border-color: $num-3;
+  border-width: 2px;
+  display: inline-block;
+  margin: 0 20px;
+  width: 85%;
+}
+
+.featurette-heading {
+  margin-top: 20px;
+}
+
+.item {
+  height: $all;
+  width: $all;
+}
+
+#info-container {
+  z-index: 17;
+  top: $all;
+}
+
+#marketing {
+  /*background-color: $bg;*/
+  padding: 0px;
+  margin-right: 0;
+  margin-left: 0;
+  width: $all;
+  right: 0;
+  left: 0;
+  box-shadow: 0 0 1.2em $bg, 0 0 1.2em $bg, 0 0 1.2em $bg, 0 0 1.2em $bg, 0 0 1.2em $bg, 0 0 1.2em $bg, 0 0 1.2em $bg, 0 0 1.2em $bg;
+  // border-top: 10px solid $fg;
+  // border-top-style: dotted;
+}
+
+.featurette {
+  padding: 0px 20px 60px;
+  vertical-align: middle;
+  margin-top: 0px;
+  h2 {
+    font-family: $headers;
+    font-size: 42px;
+  }
+  p {
+    font-family: $pGraphs;
+    font-size: 16px;
+    a {
+      color: $red;
+    }
+  }
+}
+
+#feature-0,
+#feature-4,
+#feature-1,
+#feature-3 {
+  padding: 20px 20px;
+  background-color: $bg;
+  width: $all;
+  opacity: .98;
+}
+
+#feature-0 {
+  padding-top: 0;
+  text-align: center;
+  h3 {
+    font-family: $headers;
+  }
+  p a {
+    outline: 0;
+  }
+}
+
+#feature-1 {
+  opacity: 1;
+  padding-right: 0;
+  padding-top: 0;
+  text-align: center;
+}
+
+#feature-2 {
+  padding-top: 0px;
+  background-color: $trans;
+  h2 {
+    text-shadow: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+    color: $num-3;
+  }
+
+  p {
+    color: $at-zoo;
+    text-shadow: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+  }
+}
+
+#feature-3 {
+  padding-top: 0px;
+}
+
+#feature-4 {
+  padding-top: 0;
+  text-align: center;
+}
+
+
+
+/*
+Section 1, Hostess
+===================>>>
+*/
+
+#poisonWaters {
+  width: 365px;
+  height: 441px;
+  position: relative;
+  top: 30px;
+}
+
+#poisonWatersText {
+  position: relative;
+  top: 50px;
+  right: 50px;
+  h2 {
+    font-family: $headers, $pGraphs, josefin slab, maven pro, pathway gothic one, playfair display, questrial, roboto slab, rokkitt;
+    font-size: 42px;
+
+  }
+  p {
+    font-family: $pGraphs, rokkitt;
+    font-size: 16px;
+    a {
+      color: $red;
+    }
+  }
+}
+
+#poisonWatersFeature {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+/*
+Section 2, Headliner
+=====================>>>
+*/
+
+
+#laughingLeo {
+  position: absolute;
+  top: 590px;
+  left: 70px;
+  border-radius: 25%;
+  opacity: .08;
+
+}
+
+#caitW {
+  position: relative;
+  bottom: 10px;
+  left: 15px;
+  border: 10px solid $at-zoo;
+  border-style: dotted;
+}
+
+#caitWText {
+  position: relative;
+  left: 100px;
+}
+
+#caitTwitter {
+  background-color: $bg;
+  color: $fg;
+  outline: 0;
+}
+
+#caitTwitter:hover {
+  background-color: #1b69c4;
+  color: $fg;
+  outline: 0;
+}
+
+#caitTwitter:active,
+#caitTwitter:focus {
+  background-color: #539ef5;
+  color: $fg;
+  outline: 0;
+}
+
+
+/*
+Section 3, Event Info
+======================>>>
+*/
+
+#sinceBadge {
+  height: 350px;
+  width: 350px;
+}
+
+#eventText {
+  position: relative;
+  right: 60px;
+  bottom: 60px;
+  h2 {
+    font-size: 34px;
+  }
+  a {
+    color: $red;
+    p {
+      color: $red;
+      margin-bottom: 0px;
+    }
+  }
+  p {
+    margin-bottom: 7px;
+  }
+}
+
+#archFeature {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+#sinceBadge {
+  position: relative;
+  bottom: 60px;
+  left: 120px;
+}
+
+#tixBtn2 {
+  display: inline-block;
+  font-family: $pGraphs;
+  font-size: 10px;
+  border: 1px solid $orange;
+  background-color: $trans;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+#tixBtn2:hover {
+  background-color: $bg;
+}
+
+#tixBtn2:active {
+  color: $orange;
+  background-color: green;
+}
+
+#donateBtn2 {
+  display: inline-block;
+  font-family: $pGraphs;
+  font-size: 10px;
+  border: 1px solid $orange;
+  background-color: $trans;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#donateBtn2:hover {
+  background-color: $bg;
+}
+
+#donateBtn2:active {
+  color: $orange;
+  background-color: green;
+}
+
+
+
+/*
+Section 4, Cause
+=================>>>
+*/
+
+#causeHead {
+  position: relative;
+  bottom: 70px;
+}
+
+#tiger {
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.cat-shot {
+  border: 5px solid $fg;
+}
+
+#altaLogo  {
+  position: absolute;
+  height: 400px;
+  width: 710px;
+  top: 1580px;
+  left: 280px;
+  opacity: .15;
+  border-radius: 20px;
+}
+
+#altaTitle {
+  position: relative;
+  bottom: 50px;
+  color: $orange;
+  text-shadow: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+}
+
+#cause {
+  position: relative;
+  bottom: 25px;
+  margin-bottom: 0;
+}
+
+.causeBtn {
+  background-color: $bg;
+  border: 1px solid $fg;
+  border-radius: 5px;
+  color: $fg;
+}
+
+#cbtnCont {
+  position: relative;
+  bottom: 40px;
+}
+
+#cbtn,
+#cbtn2 {
+  color: $fg;
+}
+
+#cbtn:hover,
+#cbtn2:hover {
+  background-color: $fg;
+  color: $bg;
+}
+#cbtn:active,
+#cbtn2:active {
+  background-color: $orange;
+  color: $fg;
+}
+
+.col-lg-6 {
+  position: relative;
+  bottom: 30px;
+  p {
+    text-shadow: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+  }
+}
+
+/*
+Section 5, AAZK Info
+=====================>>>
+*/
+
+#aazk {
+  border-radius: 7px;
+  box-shadow: 0 0 0.6em white, 0 0 0.6em white, 0 0 0.6em white, 0 0 0.6em white, 0 0 0.6em white, 0 0 0.6em white, 0 0 0.6em white, 0 0 0.6em white;
+}
+
+#aazkInfo {
+  position: relative;
+  bottom: 30px;
+}
+
+#aazkPC {
+  color: $bg;
+  text-shadow: -1px -1px 0 $fg, 1px -1px 0 $fg, -1px 1px 0 $fg, 1px 1px 0 $fg;
+}
+
+#aazkHome {
+  background-color: $bg;
+  border: 1px solid $fg;
+  border-radius: 5px;
+  color: $fg;
+}
+
+#aazkHome:hover {
+  background-color: $fg;
+  color: $bg;
+}
+
+#aazkHome:active {
+  background-color: #0a4683;
+  color: $fg;
+}
+
+/*
+Footer Styles
+==============>>>
+*/
+
+#ef {
+  position: relative;
+  margin: 22px 0 15px;
+}
+
+#bttCont {
+  display: inline-block;
+  font-family: $pGraphs;
+  text-align: center;
+  line-height: 0.7;
+  border: 1px solid $fg;
+  border-radius: 50%;
+  // height: 90px;
+  // width: 90px;
+  padding: 13px 20px;
+  margin-bottom: 20px;
+  span {
+    display: block;
+  }
+}
+
+#bttCont:focus,
+#bttCont:hover,
+#bttCont:active {
+  text-decoration: none;
+}
+
+
+#bttCont:hover {
+  box-shadow: 0 0 0.6em $fg, 0 0 0.6em $fg, 0 0 0.6em $fg;
+}
+
+#bttCont:active {
+  box-shadow: 0 0 0.6em $at-zoo, 0 0 0.6em $at-zoo, 0 0 0.6em $at-zoo, 0 0 0.6em $at-zoo;
+}
+
+
+// #btt {
+//   display: block;
+//   position: relative;
+//   right: 15px;
+//   bottom: 60px;
+//   margin-top: 35px;
+//   a {
+//     display: block;
+//     color: $fg;
+//     font-family: $pGraphs;
+//   }
+// }
+
+#tixBtn {
+  position: relative;
+  bottom: 40px;
+  font-family: $pGraphs;
+  font-size: 68px;
+  border: 1px solid $orange;
+  color: $orange;
+  border-radius: 10px;
+}
+
+#tixBtn:hover {
+  color: $bg;
+  background-color: $orange;
+}
+
+#tixBtn:active {
+  color: $orange;
+  background-color: green;
+}
+
+
+
+#donateBtn {
+  font-family: $pGraphs;
+  font-size: 48px;
+  border: 1px solid $orange;
+  color: $orange;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#donateBtn:hover {
+  color: $bg;
+  background-color: $orange;
+}
+
+#donateBtn:active {
+  color: $orange;
+  background-color: green;
+}
+
+
+
+/*
+Reusable Classes
+=================>>
+*/
+
+.red {
+  color: $red;
+}
+
+.orange {
+  color: $orange;
+}
+
+.primary {
+  color: $fg;
+}
+
+.at-zoo {
+  color: $at-zoo;
+}
+
+.img-circle {
+  margin: 0 auto;
+}
+
+.dings {
+  font-family: dings;
+  font-size: 68px;
+  color: $fg;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.dings2 {
+  font-family: dings2;
+  font-size: 68px;
+  color: $fg;
+}
+
+.dingR {
+  float: right;
+}
+
+.divide {
+  margin: 0 auto;
+  position: relative;
+  top: 25px;
+}
+
+.divideCont {
+  text-align: center;
+  position: relative;
+  pointer-events: none;
+  bottom: 64px;
+}
+
+.divideCont2 {
+  text-align: center;
+  position: relative;
+  bottom: 63px;
+  pointer-events: none;
+}
+
+
+/*
+Parallax Effect
+=================>>
+*/
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--front {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+}
+
+/*
+Animations
+=============>>>
+*/
+
+// @keyframes scrollIndicator {
+//   0%, 100% {
+//     border-left: 2px solid $fg;
+//     border-bottom: 2px solid $fg;
+//     opacity: 0.5;
+//   }
+//   35% {
+//     border-left: 4px solid #87a4d5;
+//     border-bottom: 4px solid #87a4d5;
+//     margin-bottom: 5px;
+//     box-shadow: 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0;
+//     opacity: 0.8;
+//   }
+//   45% {
+//     border-left: 4px solid #a4b7d7;
+//     border-bottom: 4px solid #a4b7d7;
+//     opacity: 1;
+//   }
+// }
+//
+// .scrollIndicator {
+//   animation: scrollIndicator 5s infinite;
+// }
+
+
+@keyframes backToTop {
+  0%, 100% {
+    background-color: $trans;
+    color: $fg;
+  }
+  50% {
+    background-color: $fg;
+    color: $bg;
+  }
+}
+
+.backToTop {
+  animation: backToTop 10s infinite;
+}
+
+@keyframes backToTopIcon {
+  0%, 100% {
+    color: $fg;
+  }
+  50% {
+    color: $bg;
+  }
+}
+
+.backToTopIcon {
+  animation: backToTopIcon 10s infinite;
+}
+
+
+@keyframes fillHeader {
+  from {
+    background-color: $trans;
+  }
+  to {
+    background-color: $fg;
+  }
+}
+
+.fillHeader {
+  animation-name: fillHeader;
+  animation-duration: 2s;
+}
+
+@keyframes clearHeader {
+  from {
+    background-color: $fg;
+  }
+  to {
+    background-color: $trans;
+  }
+}
+
+.clearHeader {
+  animation-name: clearHeader;
+  animation-duration: 2s;
+}
+
+@keyframes shrinkFont {
+  from {
+    font-size: 30px;
+    color: $fg;
+  }
+  to {
+    font-size: 24px;
+    color: $bg;
+  }
+}
+
+.shrinkFont {
+  animation-name: shrinkFont;
+  animation-duration: 2s;
+}
+
+@keyframes expandFont {
+  from {
+    font-size: 24px;
+    color: $bg;
+  }
+  to {
+    font-size: 30px;
+    color: $fg;
+  }
+}
+
+.expandFont {
+  animation-name: expandFont;
+  animation-duration: 2s;
+}
+
+
+
+/*
+fonts
+=============>>>
+*/
+
+@font-face {
+  font-family: thatsAllFolks;
+  src: url(../fonts/thatsAllFolks.ttf);
+}
+
+@font-face {
+  font-family: dings;
+  src: url(../fonts/Retrodings.ttf);
+}
+
+@font-face {
+  font-family: dings2;
+  src: url(../fonts/retrodings2.ttf);
+}
+
+@font-face {
+  font-family: sunSpark;
+  src: url(../fonts/sunSpark.ttf);
+}
+
+@font-face {
+  font-family: wildAfrica;
+  src: url(../fonts/wildAfrica.ttf);
+}
+
+@font-face {
+  font-family: zoologic;
+  src: url(../fonts/zoologic.ttf);
+}
+
+@font-face {
+  font-family: quietZoo;
+  src: url(../fonts/quietZoo.ttf);
+}

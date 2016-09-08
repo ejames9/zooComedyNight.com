@@ -45,5 +45,10 @@ router.get('/about', function(req, res) {
   res.render('about');
 });
 
+//Map page..
+router.get('/map', function(req, res) {
+  res.render('map');
+});
+
 
 module.exports = router;

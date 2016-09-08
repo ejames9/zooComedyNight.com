@@ -1,0 +1,43 @@
+
+#fours {
+  font-family: quietZoo;
+  font-size: 372px;
+  color: #e09724;
+  margin: 0;
+}
+
+.animals {
+  font-family: zoologic;
+  font-size: 38px;
+  position: absolute;
+  float: left;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#animals {
+  top: 0px;
+}
+
+#animals2 {
+  bottom: 20px;
+}
+
+#sorry a {
+  color: #e09724;
+  text-decoration: underline;
+}
+
+#sorry a:hover {
+  color: #c3242d;
+}
+
+#sorry a:active {
+  color: #1a68c4;
+}
+
+.img-circle {
+  border: 13px solid #464b50;
+}
