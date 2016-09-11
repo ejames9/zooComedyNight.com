@@ -8,14 +8,13 @@ web app..
 var
 path = require('path'),
 env  = process.env.NODE_ENV || 'development',
-port = process.env.PORT || 8181,
-root = path.normalize(__dirname + '/..');
+port = process.env.PORT || 8181;
 
 
 
 //Configuration object..
 module.exports = {
-            root: root,
+            root: __dirname,
              app: {
                name: 'zooComedyNight.com'
              },
