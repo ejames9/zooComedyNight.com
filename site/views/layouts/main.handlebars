@@ -33,9 +33,11 @@
         <script src="js/vendor/ie-emulation-modes-warning.js"></script>
         <!--Modernizr-->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <!--Import 404 template style and markup-->
+        <!-- Import view specifid code/styles -->
         {{{_sections.404Style}}}
-
+        {{{_sections.Mapbox}}}
+        {{{_sections.alignText}}}
+        
         <!--LiveReload Script-->
         {{#if ENV_DEVELOPMENT}}
             <script src="http://localhost:35729/livereload.js"></script>
@@ -72,9 +74,10 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+        {{{_sections.MapboxJS}}}
         <script src="js/vendor/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="js/vendor/ie10-viewport-bug-workaround.js"></script>
-        <script src="js/dist/comedyNight.js"></script>
+        {{{_sections.comedyNightJS}}}
     </body>
 </html>

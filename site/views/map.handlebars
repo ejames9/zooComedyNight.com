@@ -1,1 +1,38 @@
-<img src="https://api.mapbox.com/styles/v1/ejames9/cistatqw0000t2ytckscvzpor/static/-122.715900,45.510000,12.00,0.00,45.00/1280x740@2x?access_token=pk.eyJ1IjoiZWphbWVzOSIsImEiOiIyNGNlYWUyYTU4M2Q4YTViYWM0YTBlMDRmNzIyMTYyNCJ9.RbU_-nlAAF6EOSVxj1kVMg&attribution=false" width="1280" height="740" alt="Dark-copy" />
+
+{{!--
+map.handlebars
+
+This is the view markup for the zooComedyNight.com's
+map page..
+
+Author: Eric James Foster
+--}}
+
+
+
+<!--Mapbox Files Section-->
+{{#section 'Mapbox'}}
+  <!-- Mapbox JS & CSS -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.css' rel='stylesheet' />
+  <!---->
+{{/section}}
+
+<p id="mapAddress1" class='mapAddress'>Oregon Zoo-Cascade Crest Banquet Room</p>
+<p id='mapAddress2' class='mapAddress'> 4001 SW Canyon Rd, Portland, OR 97221 </p>
+
+<!-- Mapbox Map Container -->
+<div id="map"></div>
+<!-- Map Button -->
+<p><a id="mapButton" class='btn' href='/'><span id='buttonText'><i class="fa fa-arrow-circle-left"> </i> Back</span></a></p>
+
+<!-- Loading Animation -->
+<div id="loading-animation">
+  <p id="loading" class="loadingAnimation">Loading.....</p>
+</div>
+
+
+<!-- Mapbox User JS Section -->
+{{#section 'MapboxJS'}}
+  <script src="js/dist/map.js" type='text/javascript'></script>
+{{/section}}

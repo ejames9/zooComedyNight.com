@@ -1,0 +1,62 @@
+
+/*
+_archives.scss
+
+This file contains style markup for the currently under construction
+archives page for the zooComedyNight.com web app..
+
+Author: Eric James Foster
+*/
+
+
+
+
+/*
+Font variables
+==================>>>
+*/
+
+$black: #0b0b0b;
+$white: #ede5d0;
+$yellow: #e09724;
+$grey: #8f8f8f;
+$trans: transparent;
+$orange: #e37c30;
+$red: #c3242d;
+
+/*
+Font variables
+==================>>>
+*/
+
+$fresca: fresca;
+$headers: fjalla one;
+$pGraphs: inconsolata;
+
+
+
+
+#laughing-leo-backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: .09;
+  z-index: 9;
+}
+
+#archives-text-content {
+  position: relative;
+  top: 35%;
+  font-family: $pGraphs;
+  z-index: 99;
+
+  h1 {
+    color: $yellow;
+    font-size: 48px;
+  }
+  p {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id='zooMarker' width="100%" height="100%" viewBox="0 0 180 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-17.5118,-9.64736e-06)">
+        <g transform="matrix(-1.47375,0.00101795,-0.000839756,-1.21577,353.524,318.983)">
+            <path id='outerMarker' d="M166.833,77.529C166.833,77.529 113.008,143.071 113.008,193.064C113.008,229.075 137.126,258.311 166.833,258.311C196.541,258.311 220.659,229.075 220.659,193.064C220.659,143.071 166.833,77.529 166.833,77.529Z" style="fill:rgb(235,235,235);"/>
+        </g>
+        <g transform="matrix(1,0,0,1,-49.0093,-42)">
+            <circle id='circle' cx="156.5" cy="125.5" r="60.5" style="fill:black;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,-56.1731,5.04258)">
+            <text id='markerIcon' x="112.189px" y="109.507px" style="font-family:'Zoologic';font-size:50px;fill:rgb(235,235,235);">E</text>
+        </g>
+    </g>
+</svg>

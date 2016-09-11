@@ -3,6 +3,10 @@
 
 
 @import '_404';
+@import '_contact';
+@import '_archives';
+
+
 /*
 zooComedyNight.scss
 
@@ -40,11 +44,12 @@ $headers: fjalla one;
 $pGraphs: inconsolata;
 
 /*
-Num variables
+Misc. variables
 ==================>>>
 */
 
 $all: 100%;
+$outline-black: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
 
 
 
@@ -58,6 +63,7 @@ Tag Styles
 html, body {
   background-color: $bg;
   padding-bottom: 0;
+  height: 100%;
 }
 
 h3, h2  {
@@ -210,7 +216,7 @@ Cover Styles
   top: 310px;
   font-size: 27px;
   color: $at-zoo;
-  text-shadow: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+  -webkit-text-stroke: 0.5px $bg;
 }
 
 #coverLocation {
@@ -218,7 +224,8 @@ Cover Styles
   right: 110px;
   top: 365px;
   font-size: 20px;
-  text-shadow: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+  text-shadow: $outline-black;
+  -webkit-text-stroke: 0.5px $bg;
 }
 
 #coverLocation2 {
@@ -226,18 +233,19 @@ Cover Styles
   right: 45px;
   top: 395px;
   font-size: 20px;
-  text-shadow: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+  text-shadow: $outline-black;
+  -webkit-text-stroke: 0.5px $bg;
 }
 
 #viewMap {
   visibility: hidden;
 }
 
-#map-link {
+#mapLink {
   color: $num-3;
 }
 
-#map-link:hover {
+#mapLink:hover {
   color: #4477d0;
   h2 {
     text-decoration: underline;
@@ -245,6 +253,14 @@ Cover Styles
       visibility: visible;
     }
   }
+}
+
+#mapLink:active {
+  color: $fg;
+}
+
+#mapLink:focus {
+  color: #4477d0;
 }
 
 #comedyNightPic-1 {
@@ -261,6 +277,19 @@ Cover Styles
   top: 650px;
   line-height: 0.5;
   width: 140px;
+  #leftTop {
+    top: 11px;
+    z-index: 18;
+  }
+
+  #leftMid {
+    z-index: 17;
+  }
+
+  #leftBottom {
+    bottom: 11px;
+    z-index: 16;
+  }
 }
 
 #scrollIndicatorR {
@@ -270,6 +299,19 @@ Cover Styles
   top: 650px;
   line-height: 0.5;
   width: 100px;
+  #rightTop {
+    top: 11px;
+    z-index: 18;
+  }
+
+  #rightMid {
+    z-index: 17;
+  }
+
+  #rightBottom {
+    bottom: 11px;
+    z-index: 16;
+  }
 }
 
 .chevron {
@@ -285,33 +327,6 @@ Cover Styles
   z-index: 15;
 }
 
-#leftTop {
-  top: 11px;
-  z-index: 18;
-}
-
-#leftMid {
-  z-index: 17;
-}
-
-#leftBottom {
-  bottom: 11px;
-  z-index: 16;
-}
-
-#rightTop {
-  top: 11px;
-  z-index: 18;
-}
-
-#rightMid {
-  z-index: 17;
-}
-
-#rightBottom {
-  bottom: 11px;
-  z-index: 16;
-}
 
 
 /*
@@ -404,13 +419,13 @@ Features Layout Styles
   padding-top: 0px;
   background-color: $trans;
   h2 {
-    text-shadow: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+    text-shadow: $outline-black;
     color: $num-3;
   }
 
   p {
     color: $at-zoo;
-    text-shadow: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+    text-shadow: $outline-black;
   }
 }
 
@@ -623,7 +638,7 @@ Section 4, Cause
   position: relative;
   bottom: 50px;
   color: $orange;
-  text-shadow: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+  text-shadow: $outline-black;
 }
 
 #cause {
@@ -664,7 +679,7 @@ Section 4, Cause
   position: relative;
   bottom: 30px;
   p {
-    text-shadow: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+    text-shadow: $outline-black;
   }
 }
 
@@ -899,29 +914,29 @@ Animations
 =============>>>
 */
 
-// @keyframes scrollIndicator {
-//   0%, 100% {
-//     border-left: 2px solid $fg;
-//     border-bottom: 2px solid $fg;
-//     opacity: 0.5;
-//   }
-//   35% {
-//     border-left: 4px solid #87a4d5;
-//     border-bottom: 4px solid #87a4d5;
-//     margin-bottom: 5px;
-//     box-shadow: 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0;
-//     opacity: 0.8;
-//   }
-//   45% {
-//     border-left: 4px solid #a4b7d7;
-//     border-bottom: 4px solid #a4b7d7;
-//     opacity: 1;
-//   }
-// }
-//
-// .scrollIndicator {
-//   animation: scrollIndicator 5s infinite;
-// }
+@keyframes scrollIndicator {
+  0%, 100% {
+    border-left: 2px solid $fg;
+    border-bottom: 2px solid $fg;
+    opacity: 0.5;
+  }
+  35% {
+    border-left: 4px solid #87a4d5;
+    border-bottom: 4px solid #87a4d5;
+    margin-bottom: 5px;
+    box-shadow: 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0;
+    opacity: 0.8;
+  }
+  45% {
+    border-left: 4px solid #a4b7d7;
+    border-bottom: 4px solid #a4b7d7;
+    opacity: 1;
+  }
+}
+
+.scrollIndicator {
+  animation: scrollIndicator 5s infinite;
+}
 
 
 @keyframes backToTop {

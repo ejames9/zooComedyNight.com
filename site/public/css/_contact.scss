@@ -1,0 +1,149 @@
+
+/**
+* _contact.scss
+*
+* Styles for the zooComedyNight.com web app's
+* contact page..
+*
+* Author: Eric James Foster
+**/
+
+
+
+
+
+/*
+Color variables
+==================>>>
+*/
+
+$black: #0b0b0b;
+$white: #ede5d0;
+$yellow: #e09724;
+$grey: #8f8f8f;
+$trans: transparent;
+$orange: #e37c30;
+$red: #c3242d;
+$dark-grey: #262524;
+/*
+Font variables
+==================>>>
+*/
+
+$fresca: fresca;
+$headers: fjalla one;
+$pGraphs: inconsolata;
+
+/*
+Misc. variables
+==================>>>
+*/
+
+$all: 100%;
+$outline-black: -0.5px -0.5px 0 $black, 0.5px -0.5px 0 $black, -0.5px 0.5px 0 $black, 0.5px 0.5px 0 $black;
+
+
+
+
+#map {
+  position: absolute;
+  // top: 40%;
+  height: 100%;
+  width: 100%;
+  border: 20px solid #262524;
+  // border-bottom: 10px solid $yellow;
+  border-radius: 50%;
+  opacity: .9;
+  z-index: 999;
+}
+
+#mapButton {
+  height: 80px;
+  width: 160px;
+  border: 1px solid $dark-grey;
+  border-radius: 50%;
+  background-color: $red;
+  color: $dark-grey;
+  position: absolute;
+  font-family: $headers;
+  font-size: 26px;
+  top: 80%;
+  left: 10%;
+  z-index: 1000;
+}
+
+#buttonText {
+  position: relative;
+  top: 15px;
+  right: 7px;
+}
+
+#mapButton:hover {
+  background-color: $trans;
+  border: 1px solid $white;
+  color: $white;
+}
+
+#mapButton:active {
+  background-color: $dark-grey;
+  color: $red;
+}
+
+#zooMarker {
+  height: 100px;
+  width: 85px;
+}
+
+// #laughing-leo-backdrop {
+//   height: 100%;
+//   width: 100%;
+//   z-index: 99;
+// }
+
+.mapAddress {
+  position: absolute;
+  font-family: $headers;
+  font-size: 48px;
+  color: $yellow;
+  left: 60px;
+  text-shadow: $outline-black;
+  z-index: 1001;
+}
+
+#mapAddress1 {
+  top: 100px;
+}
+
+#mapAddress2 {
+  top: 158px;
+}
+
+#loading-animation {
+  position: absolute;
+  left: 35%;
+  top: 45%;
+  font-family: $headers;
+  font-size: 48px;
+  z-index: 9999;
+}
+
+/*
+Loading Animation
+==================>>>
+*/
+
+@keyframes loadingAnimation {
+  0%, 100% {
+    opacity: 0.2;
+    box-shadow: none;
+
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 1.2em $red, 0 0 1.2em $red, 0 0 1.2em $red, 0 0 1.2em $red;
+  }
+}
+
+.loadingAnimation {
+  animation: loadingAnimation 3s infinite;
+}
