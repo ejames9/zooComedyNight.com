@@ -8,8 +8,10 @@ Author: Eric James Foster
 */
 
 
+
 //imports..
-use 'elementsJS' el, log, go, scroll, on, off, inspect
+use 'elementsJS' el, log, go, scroll, on, off, inspect, xhr
+
 
 
 
@@ -20,7 +22,7 @@ function animateHeader() {
       _navbar_ = <navbar/>,
     _parallax_ = <'#parallax'/>,
      _navLogo_ = <'#nav-logo'/>,
-    _chevrons_ = <'.chevron scrollIndicator'/>;
+    _chevrons_ = <'[class~=chevron]'/>;
 
 
    //If user has scrolled more than 10px, execute animation..
@@ -94,12 +96,12 @@ function animateHeader() {
   }
 }
 
+
 //DOM Ready Function..
 go
 (function() {
   //
   let _parallax_ = <'#parallax'>;
-
   //Set listener on parallax container, because it is preventing the scroll event from bubbling..
   on('scroll', _parallax_, animateHeader);
 });

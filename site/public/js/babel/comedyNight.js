@@ -14,6 +14,7 @@ Author: Eric James Foster
 
 ///-------Begin Module Imports---------///
 var _$ = require("elementsJS")._$;
+var el = require("elementsJS").el;
 var dom = require("elementsJS").dom;
 var make = require("elementsJS").make;
 var element = require("elementsJS").element;
@@ -28,6 +29,7 @@ var scroll = elementsJS.scroll;
 var on = elementsJS.on;
 var off = elementsJS.off;
 var inspect = elementsJS.inspect;
+var xhr = elementsJS.xhr;
 
 ///End Module requires///
 
@@ -45,7 +47,7 @@ function animateHeader() {
         var elem1 = _$('#nav-logo') ? dom('#nav-logo') : make('#nav-logo').put("body");
         return elem1;
     }(),
-        _chevrons_ = dom('.chevron scrollIndicator');
+        _chevrons_ = dom('[class~=chevron]');
 
     //If user has scrolled more than 10px, execute animation..
     if (_parallax_.scrolled() > 10) {
@@ -105,7 +107,6 @@ function animateHeader() {
 go(function () {
     //
     var _parallax_ = el('#parallax');
-
     //Set listener on parallax container, because it is preventing the scroll event from bubbling..
     on('scroll', _parallax_, animateHeader);
 });

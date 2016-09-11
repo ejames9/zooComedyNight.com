@@ -15,13 +15,33 @@ elemsJS  = require('gulp-elementsjs-interpreter'),
 babel    = require('gulp-babel')
 webpack  = require('webpack'),
 gWebpack = require('gulp-webpack'),
-run      = require('run-sequence');
+run      = require('run-sequence'),
+path     = require('path');
+
+
 
 //Configure Webpack..
 const webpackConfig = {
   entry: './public/js/babel/comedyNight.js',
   output: {
     filename: 'comedyNight.js'
+  },
+  //Use browserify's 'brfs' module to deal with node's readFileSync() function..
+  // module: {
+  //   postLoaders: [
+  //     {
+  //       include: path.resolve(__dirname, 'node_modules/mapbox-gl-shaders'),
+  //       loader: 'transform?brfs'
+  //     }
+  //   ]
+  // }
+};
+
+//Configure Webpack..
+const webpackConfig2 = {
+  entry: './public/js/babel/map.js',
+  output: {
+    filename: 'map.js'
   }
 };
 
@@ -36,7 +56,7 @@ gulp.task('sass', ()=> {
 
 //Preprocess JS (babel, elementsJS)
 gulp.task('prejs', ()=> {
-  return gulp.src('./public/js/src/comedyNight.js')
+  return gulp.src('./public/js/src/*.js')
     .pipe(elemsJS())
     .pipe(babel({
       presets: ["es2015"]
@@ -55,18 +75,39 @@ gulp.task('bundle', ()=> {
     .pipe(gulp.dest('./public/js/dist'));
 });
 
+gulp.task('bundle2', ()=> {
+  var
+  compiler = gWebpack(webpackConfig2, webpack);
+  //Compile..
+  return gulp.src('./public/js/babel/map.js')
+    .pipe(compiler)
+    .pipe(gulp.dest('./public/js/dist'));
+});
+
 gulp.task('js', ()=> {
+  return run('prejs', 'bundle', 'bundle2');
+});
+
+gulp.task('js1', ()=> {
   return run('prejs', 'bundle');
 });
 
+gulp.task('js2', ()=> {
+  return run('prejs', 'bundle2');
+});
+
 //Watch for changes in sass file..
-gulp.task('watch', ()=> {
+gulp.task('watchSass', ()=> {
   return gulp.watch('./public/css/*.scss', ['sass']);
 });
 
-//Watch for changes in JS file..
-gulp.task('watchjs', ()=> {
-  return gulp.watch('./public/js/src/*.js',  ['js']);
+//Watch for changes in JS files..
+gulp.task('watchComedyNightJS', ()=> {
+  return gulp.watch('./public/js/src/comedyNight.js',  ['js1']);
+});
+
+gulp.task('watchMapJS', ()=> {
+  return gulp.watch('./public/js/src/map.js',  ['js2']);
 });
 
 //Reload Page on changes to js or html..
@@ -88,4 +129,4 @@ gulp.task('develop', function() {
 });
 
 //Default gulp task..
-gulp.task('default', ['sass', 'js', 'develop', 'watch', 'watchjs']);
+gulp.task('default', ['sass', 'js', 'develop', 'watchSass', 'watchComedyNightJS', 'watchMapJS']);

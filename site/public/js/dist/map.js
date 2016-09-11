@@ -47,16 +47,15 @@
 	"use strict";
 
 	/*
-	comedyNight.js
+	map.js
 
-	Client-side entry point javascript file for the zooComedyNight.com
-	web application..
+	Client-side entry point javascript file for adding a map to the zooComedyNight.com
+	web application's contact page..
+
+	Amur location: [136.166667, 45.333333]
 
 	Author: Eric James Foster
 	*/
-
-	//imports..
-
 
 	///-------Begin Module Imports---------///
 	var _$ = __webpack_require__(1)._$;
@@ -68,93 +67,44 @@
 
 
 	var elementsJS = __webpack_require__(1);
-	var el = elementsJS.el;
-	var log = elementsJS.log;
 	var go = elementsJS.go;
-	var scroll = elementsJS.scroll;
-	var on = elementsJS.on;
-	var off = elementsJS.off;
 	var inspect = elementsJS.inspect;
-	var xhr = elementsJS.xhr;
+	var log = elementsJS.log;
 
 	///End Module requires///
 
 
-	//Header animation event-listener callback function..
-	function animateHeader() {
-	    //Cache elements..
-	    var _navBar_ = element(navBar),
-	        _navbar_ = element(navbar),
-	        _parallax_ = function () {
-	        var elem0 = _$('#parallax') ? dom('#parallax') : make('#parallax').put("body");
-	        return elem0;
-	    }(),
-	        _navLogo_ = function () {
-	        var elem1 = _$('#nav-logo') ? dom('#nav-logo') : make('#nav-logo').put("body");
-	        return elem1;
-	    }(),
-	        _chevrons_ = dom('[class~=chevron]');
-
-	    //If user has scrolled more than 10px, execute animation..
-	    if (_parallax_.scrolled() > 10) {
-	        (function () {
-	            //
-	            _navBar_.class('clearHeader', '-');
-	            _navLogo_.class('expandFont', '-');
-
-	            _navBar_.class('fillHeader', '+');
-	            _navLogo_.class('shrinkFont', '+');
-
-	            //Stop scroll indicator animation, otherwise user computer will explode..
-	            _chevrons_.every(function (chevron) {
-	                chevron.class('scrollIndicator', '-');
-	            });
-	            //
-	            setTimeout(function () {
-	                _navBar_.bgColor('#ede5d0');
-	                _navLogo_.color('#0b0b0b').fontSize('24px');
-	            }, 2000);
-
-	            //Remove event handler to smooth CSS Scroll animation..
-	            off('scroll', _parallax_.el, animateHeader);
-
-	            //Poll parallax element for scrolled value, reset header when below 10..
-	            var interval = setInterval(function () {
-	                //
-	                if (_parallax_.scrolled() < 50) {
-	                    //
-	                    _navBar_.class('fillHeader', '-');
-	                    _navLogo_.class('shrinkFont', '-');
-
-	                    _navBar_.class('clearHeader', '+');
-	                    _navLogo_.class('expandFont', '+');
-
-	                    //Restart scroll indicator animation..
-	                    _chevrons_.every(function (chevron) {
-	                        chevron.class('scrollIndicator', '+');
-	                    });
-	                    //
-	                    setTimeout(function () {
-	                        _navBar_.bgColor('transparent');
-	                        _navLogo_.color('#ede5d0').fontSize('30px');
-	                    }, 2000);
-
-	                    //Clear poller..
-	                    clearInterval(interval);
-	                    //Reset listener..
-	                    on('scroll', _parallax_.el, animateHeader);
-	                }
-	            }, 500);
-	        })();
-	    }
+	//Add a marker to map, convenience function..
+	function addMarker(elem, offset, map, coordinates) {
+	  var marker = new mapboxgl.Marker(elem.el, { offset: offset }).setLngLat(coordinates).addTo(map);
 	}
 
-	//DOM Ready Function..
+	//Initialize Mapbox Map..
 	go(function () {
-	    //
-	    var _parallax_ = el('#parallax');
-	    //Set listener on parallax container, because it is preventing the scroll event from bubbling..
-	    on('scroll', _parallax_, animateHeader);
+	  //API Token
+	  mapboxgl.accessToken = 'pk.eyJ1IjoiZWphbWVzOSIsImEiOiIyNGNlYWUyYTU4M2Q4YTViYWM0YTBlMDRmNzIyMTYyNCJ9.RbU_-nlAAF6EOSVxj1kVMg';
+	  //
+	  var map = new mapboxgl.Map({
+	    container: 'map',
+	    style: 'mapbox://styles/ejames9/cistatqw0000t2ytckscvzpor',
+	    center: [-122.7159, 45.5100],
+	    zoom: 13,
+	    pitch: 55,
+	    hash: true,
+	    attributionControl: false
+	  });
+	  //Set load listener..
+	  map.on('load', function () {
+	    document.body.removeChild(el('#loading-animation'));
+	  });
+
+	  //Create marker markup..
+	  var _div_ = make('#zooMarker-container'),
+	      _png_ = make('#zooMarker', 'img');
+	  //Append marker image to marker container..
+	  _png_.src('img/zooMarker5.png').height('60px').width('47px').put(_div_.el);
+	  //Place marker on Zoo..
+	  addMarker(_div_, [0, -55], map, [-122.7159, 45.5100]);
 	});
 
 /***/ },

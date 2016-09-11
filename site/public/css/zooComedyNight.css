@@ -35,6 +35,141 @@
 .img-circle {
   border: 13px solid #464b50; }
 
+/**
+* _contact.scss
+*
+* Styles for the zooComedyNight.com web app's
+* contact page..
+*
+* Author: Eric James Foster
+**/
+/*
+Color variables
+==================>>>
+*/
+/*
+Font variables
+==================>>>
+*/
+/*
+Misc. variables
+==================>>>
+*/
+#map {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 20px solid #262524;
+  border-radius: 50%;
+  opacity: .9;
+  z-index: 999; }
+
+#mapButton {
+  height: 80px;
+  width: 160px;
+  border: 1px solid #262524;
+  border-radius: 50%;
+  background-color: #c3242d;
+  color: #262524;
+  position: absolute;
+  font-family: fjalla one;
+  font-size: 26px;
+  top: 80%;
+  left: 10%;
+  z-index: 1000; }
+
+#buttonText {
+  position: relative;
+  top: 15px;
+  right: 7px; }
+
+#mapButton:hover {
+  background-color: transparent;
+  border: 1px solid #ede5d0;
+  color: #ede5d0; }
+
+#mapButton:active {
+  background-color: #262524;
+  color: #c3242d; }
+
+#zooMarker {
+  height: 100px;
+  width: 85px; }
+
+.mapAddress {
+  position: absolute;
+  font-family: fjalla one;
+  font-size: 48px;
+  color: #e09724;
+  left: 60px;
+  text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b;
+  z-index: 1001; }
+
+#mapAddress1 {
+  top: 100px; }
+
+#mapAddress2 {
+  top: 158px; }
+
+#loading-animation {
+  position: absolute;
+  left: 35%;
+  top: 45%;
+  font-family: fjalla one;
+  font-size: 48px;
+  z-index: 9999; }
+
+/*
+Loading Animation
+==================>>>
+*/
+@keyframes loadingAnimation {
+  0%, 100% {
+    opacity: 0.2;
+    box-shadow: none; }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 1.2em #c3242d, 0 0 1.2em #c3242d, 0 0 1.2em #c3242d, 0 0 1.2em #c3242d; } }
+
+.loadingAnimation {
+  animation: loadingAnimation 3s infinite; }
+
+/*
+_archives.scss
+
+This file contains style markup for the currently under construction
+archives page for the zooComedyNight.com web app..
+
+Author: Eric James Foster
+*/
+/*
+Font variables
+==================>>>
+*/
+/*
+Font variables
+==================>>>
+*/
+#laughing-leo-backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: .09;
+  z-index: 9; }
+
+#archives-text-content {
+  position: relative;
+  top: 35%;
+  font-family: inconsolata;
+  z-index: 99; }
+  #archives-text-content h1 {
+    color: #e09724;
+    font-size: 48px; }
+  #archives-text-content p {
+    font-size: 22px; }
+
 /*
 zooComedyNight.scss
 
@@ -52,7 +187,7 @@ Font variables
 ==================>>>
 */
 /*
-Num variables
+Misc. variables
 ==================>>>
 */
 /*
@@ -61,7 +196,8 @@ Tag Styles
 */
 html, body {
   background-color: #0b0b0b;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  height: 100%; }
 
 h3, h2 {
   font-family: fjalla one; }
@@ -184,34 +320,42 @@ Cover Styles
   top: 310px;
   font-size: 27px;
   color: #e09724;
-  text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b; }
+  -webkit-text-stroke: 0.5px #0b0b0b; }
 
 #coverLocation {
   float: right;
   right: 110px;
   top: 365px;
   font-size: 20px;
-  text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b; }
+  text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b;
+  -webkit-text-stroke: 0.5px #0b0b0b; }
 
 #coverLocation2 {
   float: right;
   right: 45px;
   top: 395px;
   font-size: 20px;
-  text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b; }
+  text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b;
+  -webkit-text-stroke: 0.5px #0b0b0b; }
 
 #viewMap {
   visibility: hidden; }
 
-#map-link {
+#mapLink {
   color: #8f8f8f; }
 
-#map-link:hover {
+#mapLink:hover {
   color: #4477d0; }
-  #map-link:hover h2 {
+  #mapLink:hover h2 {
     text-decoration: underline; }
-    #map-link:hover h2 span {
+    #mapLink:hover h2 span {
       visibility: visible; }
+
+#mapLink:active {
+  color: #ede5d0; }
+
+#mapLink:focus {
+  color: #4477d0; }
 
 #comedyNightPic-1 {
   position: absolute;
@@ -226,6 +370,14 @@ Cover Styles
   top: 650px;
   line-height: 0.5;
   width: 140px; }
+  #scrollIndicatorL #leftTop {
+    top: 11px;
+    z-index: 18; }
+  #scrollIndicatorL #leftMid {
+    z-index: 17; }
+  #scrollIndicatorL #leftBottom {
+    bottom: 11px;
+    z-index: 16; }
 
 #scrollIndicatorR {
   position: absolute;
@@ -234,6 +386,14 @@ Cover Styles
   top: 650px;
   line-height: 0.5;
   width: 100px; }
+  #scrollIndicatorR #rightTop {
+    top: 11px;
+    z-index: 18; }
+  #scrollIndicatorR #rightMid {
+    z-index: 17; }
+  #scrollIndicatorR #rightBottom {
+    bottom: 11px;
+    z-index: 16; }
 
 .chevron {
   position: relative;
@@ -246,28 +406,6 @@ Cover Styles
   transform: rotateZ(-45deg);
   opacity: 0.5;
   z-index: 15; }
-
-#leftTop {
-  top: 11px;
-  z-index: 18; }
-
-#leftMid {
-  z-index: 17; }
-
-#leftBottom {
-  bottom: 11px;
-  z-index: 16; }
-
-#rightTop {
-  top: 11px;
-  z-index: 18; }
-
-#rightMid {
-  z-index: 17; }
-
-#rightBottom {
-  bottom: 11px;
-  z-index: 16; }
 
 /*
 Features Layout Styles
@@ -722,6 +860,25 @@ Parallax Effect
 Animations
 =============>>>
 */
+@keyframes scrollIndicator {
+  0%, 100% {
+    border-left: 2px solid #ede5d0;
+    border-bottom: 2px solid #ede5d0;
+    opacity: 0.5; }
+  35% {
+    border-left: 4px solid #87a4d5;
+    border-bottom: 4px solid #87a4d5;
+    margin-bottom: 5px;
+    box-shadow: 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0;
+    opacity: 0.8; }
+  45% {
+    border-left: 4px solid #a4b7d7;
+    border-bottom: 4px solid #a4b7d7;
+    opacity: 1; } }
+
+.scrollIndicator {
+  animation: scrollIndicator 5s infinite; }
+
 @keyframes backToTop {
   0%, 100% {
     background-color: transparent;

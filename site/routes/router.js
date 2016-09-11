@@ -50,5 +50,10 @@ router.get('/map', function(req, res) {
   res.render('map');
 });
 
+//Archives page..
+router.get('/archives', function(req, res) {
+  res.render('archives');
+});
+
 
 module.exports = router;

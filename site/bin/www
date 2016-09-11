@@ -1,7 +1,7 @@
 /*
 www
 */
-// process.env.NODE_ENV = 'production';
+
 
 const app = require('../zooComedyNight'),
    config = require('../config');
