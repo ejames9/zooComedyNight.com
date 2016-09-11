@@ -27,6 +27,7 @@
     "json-loader": "^0.5.4",
     "mapbox-gl": "^0.23.0",
     "mongoose": "^4.5.10",
+    "morgan": "^1.7.0",
     "serve-favicon": "^2.3.0"
   },
   "repository": "https://github.com/ejames9/zooComedyNight.com",
@@ -41,7 +42,6 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.3.2",
     "gulp-webpack": "^1.5.0",
-    "morgan": "^1.7.0",
     "run-sequence": "^1.2.2",
     "transform-loader": "^0.2.3",
     "webpack": "^1.13.2"
