@@ -84,10 +84,10 @@ app.use(bodyParser.urlencoded( { extended: true} ));
 app.use(bodyParser.json());
 
 //Serve favicon..
-app.use(require('serve-favicon')(config.root + '/site/public/img/favicon.ico'));
+app.use(require('serve-favicon')(config.root + '/public/img/favicon.ico'));
 
 //Set up Static files..
-app.use(express.static(config.root + '/site/public'));
+app.use(express.static(config.root + '/public'));
 
 //Link in morgan..
 app.use(logger('dev'));
