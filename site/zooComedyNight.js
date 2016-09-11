@@ -39,7 +39,6 @@ app.set('view engine', 'handlebars');
 //App environment environmental variable..
 var
 env = process.env.NODE_ENV || 'development';
-      app.locals.shitburger = 'Function ShitBurger!!';
       app.locals.ENV = env;
       app.locals.ENV_DEVELOPMENT = env == 'development';
 
@@ -109,12 +108,36 @@ app.use(function(req, res) {
   res.render('404');
 });
 
-//Custom 500 page..
+
+/// error handlers
+
+// development error handler
+// will print stacktrace
+
+if (app.get('env') === 'development') {
+  //Custom 500 page..
+  app.use(function(err, req, res, next) {
+    console.error(err.stack);
+    res.status(500);
+    res.render('500', {errr: err.stack});
+  });
+}
+
+// production error handler
+// no stacktraces leaked to user
 app.use(function(err, req, res, next) {
-  console.error(err.stack);
-  res.status(500);
-  res.render('500', {errr: err.stack});
+    res.status(err.status || 500);
+    res.render('500', {
+        message: err.message,
+        error: {},
+        title: 'error',
+        stack: err.stack
+    });
 });
+
+
+
+
 
 
 module.exports = app;
