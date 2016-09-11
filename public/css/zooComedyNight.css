@@ -171,6 +171,29 @@ Font variables
     font-size: 22px; }
 
 /*
+_respond.scss
+
+These are the responsive styles for the zooComedyNight.com
+web application..
+
+Author: Eric James Foster
+*/
+/*
+Color variables
+==================>>>
+*/
+/*
+Font variables
+==================>>>
+*/
+/*
+Misc. variables
+==================>>>
+*/
+/*
+Responsive Design+++++++++++++++++++======================>>>>
+--Media Queries--------------------*/
+/*
 zooComedyNight.scss
 
 This is the main Sass file for the zooComedyNight.com
@@ -257,12 +280,18 @@ Cover Styles
   z-index: 10; }
 
 #leopardHead {
-  height: 100%;
-  width: 100%; }
+  height: !important 100%;
+  width: !important 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 #tigerHead {
-  height: 100%;
-  width: 100%; }
+  height: !important 100%;
+  width: !important 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 #looneyCover {
   height: 100%;

@@ -5,6 +5,7 @@
 @import '_404';
 @import '_contact';
 @import '_archives';
+@import '_respond';
 
 
 /*
@@ -143,13 +144,19 @@ Cover Styles
 }
 
 #leopardHead {
-  height: $all;
-  width: $all;
+  height: !important $all;
+  width: !important $all;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #tigerHead {
-  height: $all;
-  width: $all;
+  height: !important $all;
+  width: !important $all;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #looneyCover {

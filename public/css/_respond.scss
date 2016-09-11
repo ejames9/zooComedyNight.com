@@ -1,0 +1,55 @@
+
+/*
+_respond.scss
+
+These are the responsive styles for the zooComedyNight.com
+web application..
+
+Author: Eric James Foster
+*/
+
+
+
+
+
+/*
+Color variables
+==================>>>
+*/
+
+$bg: #0b0b0b;
+$fg: #ede5d0;
+$at-zoo: #e09724;
+$num-3: #8f8f8f;
+$trans: transparent;
+$orange: #e37c30;
+$red: #c3242d;
+
+/*
+Font variables
+==================>>>
+*/
+
+$fresca: fresca;
+$headers: fjalla one;
+$pGraphs: inconsolata;
+
+/*
+Misc. variables
+==================>>>
+*/
+
+$all: 100%;
+$outline-black: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+
+
+
+
+/*
+Responsive Design+++++++++++++++++++======================>>>>
+--Media Queries--------------------*/
+
+@media screen and (min-width: 900px) {
+
+
+}

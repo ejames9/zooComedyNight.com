@@ -80,18 +80,28 @@
 	///End Module requires///
 
 
+	//Set Slide heights..
+	function setCatHeadSlideHeights() {
+	    (function () {
+	        var elem0 = _$('.item') ? dom('.item') : make('.item').put("body");
+	        return elem0;
+	    })().every(function (item) {
+	        item.height(window.innerHeight + 'px');
+	    });
+	}
+
 	//Header animation event-listener callback function..
 	function animateHeader() {
 	    //Cache elements..
 	    var _navBar_ = element(navBar),
 	        _navbar_ = element(navbar),
 	        _parallax_ = function () {
-	        var elem0 = _$('#parallax') ? dom('#parallax') : make('#parallax').put("body");
-	        return elem0;
+	        var elem1 = _$('#parallax') ? dom('#parallax') : make('#parallax').put("body");
+	        return elem1;
 	    }(),
 	        _navLogo_ = function () {
-	        var elem1 = _$('#nav-logo') ? dom('#nav-logo') : make('#nav-logo').put("body");
-	        return elem1;
+	        var elem2 = _$('#nav-logo') ? dom('#nav-logo') : make('#nav-logo').put("body");
+	        return elem2;
 	    }(),
 	        _chevrons_ = dom('[class~=chevron]');
 
@@ -155,6 +165,9 @@
 	    var _parallax_ = el('#parallax');
 	    //Set listener on parallax container, because it is preventing the scroll event from bubbling..
 	    on('scroll', _parallax_, animateHeader);
+
+	    //
+	    setCatHeadSlideHeights();
 	});
 
 /***/ },

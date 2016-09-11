@@ -15,6 +15,16 @@ use 'elementsJS' el, log, go, scroll, on, off, inspect, xhr
 
 
 
+//Set Slide heights..
+function setCatHeadSlideHeights() {
+  <'.item'/>
+        .every((item)=> {
+          item
+            .height(window.innerHeight + 'px');
+        });
+}
+
+
 //Header animation event-listener callback function..
 function animateHeader() {
   //Cache elements..
@@ -104,4 +114,7 @@ go
   let _parallax_ = <'#parallax'>;
   //Set listener on parallax container, because it is preventing the scroll event from bubbling..
   on('scroll', _parallax_, animateHeader);
+
+  //
+  setCatHeadSlideHeights()
 });
