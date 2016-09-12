@@ -942,6 +942,25 @@ Parallax Effect
 Animations
 =============>>>
 */
+@keyframes scrollIndicator {
+  0%, 100% {
+    border-left: 2px solid #ede5d0;
+    border-bottom: 2px solid #ede5d0;
+    opacity: 0.5; }
+  35% {
+    border-left: 4px solid #87a4d5;
+    border-bottom: 4px solid #87a4d5;
+    margin-bottom: 5px;
+    box-shadow: 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0;
+    opacity: 0.8; }
+  45% {
+    border-left: 4px solid #a4b7d7;
+    border-bottom: 4px solid #a4b7d7;
+    opacity: 1; } }
+
+.scrollIndicator {
+  animation: scrollIndicator 5s infinite; }
+
 @keyframes backToTop {
   0%, 100% {
     background-color: transparent;
