@@ -248,8 +248,8 @@ html, body {
 
 #construction-container {
   position: absolute;
-  top: 200px;
-  padding: 0 150px; }
+  top: 100px;
+  padding: 0 30px; }
   #construction-container h1 {
     color: #e09724; }
 
