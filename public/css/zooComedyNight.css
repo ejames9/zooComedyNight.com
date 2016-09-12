@@ -237,26 +237,6 @@ Responsive Design+++++++++++++++++++======================>>>>
     top: 650px; } }
 
 /*
-construction.scss
-
-Styles for the mobile 'Under Construction' page..
-
-Author: Eric James Foster
-*/
-html, body {
-  text-align: center; }
-
-#construction-container {
-  position: absolute;
-  top: 100px;
-  padding: 0 30px; }
-  #construction-container h1 {
-    color: #e09724; }
-
-.links {
-  display: block; }
-
-/*
 zooComedyNight.scss
 
 This is the main Sass file for the zooComedyNight.com

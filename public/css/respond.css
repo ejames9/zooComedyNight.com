@@ -176,6 +176,43 @@ Media Queries ++++----------------/*
   #altaLogo {
     left: 290px; } }
 
+@media screen and (max-width: 1350px) and (max-height: 799px) {
+  /*
+  Cover
+  =======*/
+  #presents {
+    top: 90px;
+    left: 200px; }
+  #comedy {
+    left: 190px;
+    top: 460px; }
+  #atZoo {
+    left: 530px;
+    top: 600px; }
+  #n3 {
+    top: 255px;
+    left: 960px; }
+  #coverDate {
+    right: 40px;
+    top: 290px; }
+  #coverLocation {
+    right: 110px;
+    top: 345px; }
+  #coverLocation2 {
+    right: 45px;
+    top: 375px; }
+  #scrollIndicatorL {
+    left: 100px;
+    top: 640px; }
+  #scrollIndicatorR {
+    right: 40px;
+    top: 640px; }
+  /*
+  ALTA
+  =======*/
+  #altaLogo {
+    left: 290px; } }
+
 @media screen and (max-width: 1150px) {
   /*
   Cover
