@@ -121,19 +121,9 @@ function animateHeader() {
 
 //DOM Ready Function..
 go(function () {
-    log(isMobile() === 'iPad');
-    log(isMobile() == 'iPad');
     //
     if (isMobile()) {
-        log('Device is mobile.');
-        //
-        setLooneyToonsCoverHeight();
-        // xhr('/mobileConstruction');  TODO: Figure this out.....
-        if (isMobile() != 'iPad') {
-            location = '/construction';
-        } else {
-            log('Device is iPad');
-        }
+        location = '/construction';
     }
 
     var _parallax_ = el('#parallax');
