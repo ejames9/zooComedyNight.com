@@ -49,7 +49,70 @@ $outline-black: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5
 Responsive Design+++++++++++++++++++======================>>>>
 --Media Queries--------------------*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1500px) {
 
+  .coverText {
 
+  }
+
+  .allFolks {
+    font-size: 184px;
+  }
+
+  #presents {
+    left: 300px;
+    top: 280px;
+  }
+
+  #comedy {  
+    left: 280px;
+    top: 460px;
+  }
+
+  #atZoo {
+    font-size: 66px;
+    left: 530px;
+    top: 600px;
+  }
+
+  #n3 {
+    font-size: 262px;
+    top: 255px;
+    left: 960px;
+  }
+
+  #coverDate {
+    right: 60px;
+    top: 310px;
+    font-size: 27px;
+    -webkit-text-stroke: 0.5px $bg;
+  }
+
+  #coverLocation {
+    float: right;
+    right: 110px;
+    top: 365px;
+    font-size: 20px;
+    text-shadow: $outline-black;
+    -webkit-text-stroke: 0.5px $bg;
+  }
+
+  #coverLocation2 {
+    float: right;
+    right: 45px;
+    top: 395px;
+    font-size: 20px;
+    text-shadow: $outline-black;
+    -webkit-text-stroke: 0.5px $bg;
+  }
+
+  #scrollIndicatorL {
+    left: 100px;
+    top: 650px;
+  }
+
+  #scrollIndicatorR {
+    right: 40px;
+    top: 650px;
+  }
 }

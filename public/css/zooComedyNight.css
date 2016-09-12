@@ -193,6 +193,49 @@ Misc. variables
 /*
 Responsive Design+++++++++++++++++++======================>>>>
 --Media Queries--------------------*/
+@media screen and (min-width: 1500px) {
+  .allFolks {
+    font-size: 184px; }
+  #presents {
+    left: 300px;
+    top: 280px; }
+  #comedy {
+    left: 280px;
+    top: 460px; }
+  #atZoo {
+    font-size: 66px;
+    left: 530px;
+    top: 600px; }
+  #n3 {
+    font-size: 262px;
+    top: 255px;
+    left: 960px; }
+  #coverDate {
+    right: 60px;
+    top: 310px;
+    font-size: 27px;
+    -webkit-text-stroke: 0.5px #0b0b0b; }
+  #coverLocation {
+    float: right;
+    right: 110px;
+    top: 365px;
+    font-size: 20px;
+    text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b;
+    -webkit-text-stroke: 0.5px #0b0b0b; }
+  #coverLocation2 {
+    float: right;
+    right: 45px;
+    top: 395px;
+    font-size: 20px;
+    text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b;
+    -webkit-text-stroke: 0.5px #0b0b0b; }
+  #scrollIndicatorL {
+    left: 100px;
+    top: 650px; }
+  #scrollIndicatorR {
+    right: 40px;
+    top: 650px; } }
+
 /*
 zooComedyNight.scss
 
@@ -509,10 +552,12 @@ Features Layout Styles
   background-color: transparent; }
   #feature-2 h2 {
     text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b;
+    text-stroke: 1px black;
     color: #8f8f8f; }
   #feature-2 p {
     color: #e09724;
-    text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b; }
+    text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b;
+    text-stroke: 1px black; }
 
 #feature-3 {
   padding-top: 0px; }
@@ -599,6 +644,7 @@ Section 3, Event Info
   right: 60px;
   bottom: 60px; }
   #eventText h2 {
+    -webkit-text-stroke: 1px black;
     font-size: 34px; }
   #eventText a {
     color: #c3242d; }
@@ -606,6 +652,7 @@ Section 3, Event Info
       color: #c3242d;
       margin-bottom: 0px; }
   #eventText p {
+    -webkit-text-stroke: .25px black;
     margin-bottom: 7px; }
 
 #archFeature {
@@ -810,12 +857,18 @@ Footer Styles
   color: #e37c30;
   background-color: green; }
 
+#efio {
+  text-decoration: underline; }
+
 /*
 Reusable Classes
 =================>>
 */
 .red {
   color: #c3242d; }
+
+.grey {
+  color: #8f8f8f; }
 
 .orange {
   color: #e37c30; }
@@ -889,25 +942,6 @@ Parallax Effect
 Animations
 =============>>>
 */
-@keyframes scrollIndicator {
-  0%, 100% {
-    border-left: 2px solid #ede5d0;
-    border-bottom: 2px solid #ede5d0;
-    opacity: 0.5; }
-  35% {
-    border-left: 4px solid #87a4d5;
-    border-bottom: 4px solid #87a4d5;
-    margin-bottom: 5px;
-    box-shadow: 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0, 0 0 1.2em #4477d0;
-    opacity: 0.8; }
-  45% {
-    border-left: 4px solid #a4b7d7;
-    border-bottom: 4px solid #a4b7d7;
-    opacity: 1; } }
-
-.scrollIndicator {
-  animation: scrollIndicator 5s infinite; }
-
 @keyframes backToTop {
   0%, 100% {
     background-color: transparent;
@@ -1003,3 +1037,61 @@ fonts
 @font-face {
   font-family: quietZoo;
   src: url(../fonts/quietZoo.ttf); }
+
+/*
+Responsive Design+++++++++++++++++++======================>>>>
+--Media Queries--------------------*/
+@media screen and (min-width: 1500px) {
+  /*
+  Cover
+  --------*/
+  .allFolks {
+    font-size: 134px; }
+  #presents {
+    left: 300px;
+    top: 120px; }
+  #comedy {
+    left: 240px;
+    top: 630px; }
+  #atZoo {
+    font-size: 76px;
+    left: 750px;
+    top: 840px; }
+  #n3 {
+    font-size: 362px;
+    top: 335px;
+    left: 1300px; }
+  #coverDate {
+    right: 60px;
+    top: 350px;
+    font-size: 42px;
+    -webkit-text-stroke: 0.5px #0b0b0b; }
+  #coverLocation {
+    float: right;
+    right: 120px;
+    top: 455px;
+    font-size: 30px;
+    text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b;
+    -webkit-text-stroke: 0.5px #0b0b0b; }
+  #coverLocation2 {
+    float: right;
+    right: 10px;
+    top: 495px;
+    font-size: 30px;
+    text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b;
+    -webkit-text-stroke: 0.5px #0b0b0b; }
+  #scrollIndicatorL {
+    left: 100px;
+    top: 900px; }
+  #scrollIndicatorR {
+    right: 40px;
+    top: 900px; }
+  /*
+  Headliner
+  ----------*/
+  #caitW {
+    bottom: 30px; }
+  #caitWText {
+    left: 200px; }
+  #sinceBadge {
+    left: 310px; } }
