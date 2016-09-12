@@ -46,8 +46,12 @@ $outline-black: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5
 
 
 /*
-Responsive Design+++++++++++++++++++======================>>>>
---Media Queries--------------------*/
+RESPONSIVE DESIGN ++++=====================================>>>>
+-----------------------------------------------------/*
+-------------------------------------------/*
+Media Queries ++++----------------/*
+==============>>>>
+*/
 @media screen and (min-width: 1500px) {
   //
   /*
@@ -148,5 +152,236 @@ Responsive Design+++++++++++++++++++======================>>>>
     left: 515px;
     opacity: .15;
     border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 1499px) {
+  /*
+  Cover
+  =======*/
+
+  #presents {
+    top: 100px;
+  }
+
+  #comedy {
+    top: 485px;
+  }
+
+  #atZoo {
+    top: 620px;
+  }
+  /*
+  ALTA
+  =======*/
+
+  #altaLogo {
+    left: 330px;
+  }
+}
+
+@media screen and (max-width: 1350px) and (max-height: 1150px) {
+  /*
+  Cover
+  =======*/
+
+  #presents {
+    top: 180px;
+    left: 160px;
+  }
+
+  #comedy {
+    left: 130px;
+    top: 660px;
+  }
+
+  #atZoo {
+    left: 410px;
+    top: 800px;
+  }
+
+  #n3 {
+    top: 445px;
+    left: 850px;
+  }
+
+  #coverDate {
+    right: 40px;
+    top: 330px;
+  }
+
+  #coverLocation {
+    right: 110px;
+    top: 385px;
+  }
+
+  #coverLocation2 {
+    right: 45px;
+    top: 415px;
+  }
+
+  #scrollIndicatorL {
+    left: 100px;
+    top: 890px;
+  }
+
+  #scrollIndicatorR {
+    right: 40px;
+    top: 890px;
+  }
+}
+
+
+@media screen and (max-width: 1350px) and (max-height: 999px) {
+  /*
+  Cover
+  =======*/
+
+  #presents {
+    top: 110px;
+    left: 200px;
+  }
+
+  #comedy {
+    left: 190px;
+    top: 500px;
+  }
+
+  #atZoo {
+    left: 530px;
+    top: 640px;
+  }
+
+  #n3 {
+    top: 295px;
+    left: 960px;
+  }
+
+  #coverDate {
+    right: 40px;
+    top: 330px;
+  }
+
+  #coverLocation {
+    right: 110px;
+    top: 385px;
+  }
+
+  #coverLocation2 {
+    right: 45px;
+    top: 415px;
+  }
+
+  #scrollIndicatorL {
+    left: 100px;
+    top: 700px;
+  }
+
+  #scrollIndicatorR {
+    right: 40px;
+    top: 700px;
+  }
+
+  /*
+  ALTA
+  =======*/
+
+  #altaLogo {
+    left: 290px;
+  }
+}
+
+
+@media screen and (max-width: 1150px) {
+  /*
+  Cover
+  =======*/
+
+  #comedy {
+    left: 50px;
+    top: 480px;
+  }
+
+  #presents {
+    top: 100px;
+    left: 40px;
+  }
+
+  #atZoo {
+    top: 620px;
+    left: 310px;
+  }
+
+  #n3 {
+    top: 258px;
+    left: 735px;
+  }
+
+  #coverDate {
+    font-size: 24px;
+    right: 10px;
+    top: 320px;
+  }
+
+  #coverLocation {
+    right: 20px;
+    top: 370px;
+  }
+
+  #coverLocation2 {
+    right: -45px;
+    top: 400px;
+  }
+
+  #scrollIndicatorL {
+    left: 70px;
+    top: 680px;
+  }
+
+  #scrollIndicatorR {
+    right: 10px;
+    top: 680px;
+  }
+
+  /*
+  Hostess
+  =========*/
+
+  #poisonWaters {
+    top: 50px;
+    right: 30px;
+  }
+
+  /*
+  Headliner
+  ==========*/
+
+  #caitWText {
+    left: 40px;
+  }
+
+  /*
+  Event
+  =======*/
+
+  #sinceBadge {
+    bottom: 5px;
+    left: 100px;
+  }
+
+  #eventText {
+    left: 420px;
+    bottom: 60px;
+  }
+
+  /*
+  Cause
+  =======*/
+
+  #altaLogo  {
+    height: 500px;
+    width: 830px;
+    top: 1760px;
+    left: 100px;
   }
 }
