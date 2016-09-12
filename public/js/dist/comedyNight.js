@@ -81,6 +81,11 @@
 	///End Module requires///
 
 
+	//Set Outer looney toons cover height..
+	function setLooneyToonsCoverHeight() {
+	    element(looneyToonsCover).height(windw.innerHeight + 'px');
+	}
+
 	//Set Slide heights..
 	function setCatHeadSlideHeights() {
 	    (function () {
@@ -168,6 +173,7 @@
 	    if (isMobile()) {
 	        log('Device is mobile.');
 	        //
+	        setLooneyToonsCoverHeight();
 	        // xhr('/mobileConstruction');  TODO: Figure this out.....
 	        if (isMobile() != 'iPad') {
 	            location = '/construction';
