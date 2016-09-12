@@ -30,6 +30,7 @@ var on = elementsJS.on;
 var off = elementsJS.off;
 var inspect = elementsJS.inspect;
 var xhr = elementsJS.xhr;
+var isMobile = elementsJS.isMobile;
 
 ///End Module requires///
 
@@ -116,6 +117,13 @@ function animateHeader() {
 //DOM Ready Function..
 go(function () {
     //
+    if (isMobile()) {
+        log('Device is mobile.');
+        //
+        // xhr('/mobileConstruction');  TODO: Figure this out.....
+        location = '/construction';
+    }
+
     var _parallax_ = el('#parallax');
     //Set listener on parallax container, because it is preventing the scroll event from bubbling..
     on('scroll', _parallax_, animateHeader);

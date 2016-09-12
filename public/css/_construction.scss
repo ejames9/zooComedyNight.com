@@ -1,0 +1,32 @@
+
+/*
+construction.scss
+
+Styles for the mobile 'Under Construction' page..
+
+Author: Eric James Foster
+*/
+
+$fg: #ede5d0;
+$at-zoo: #e09724;
+
+
+
+html, body {
+  text-align: center;
+}
+
+
+#construction-container {
+  position: absolute;
+  top: 200px;
+  padding: 0 150px;
+
+  h1 {
+    color: $at-zoo;
+  }
+}
+
+.links {
+  display: block;
+}

@@ -19,30 +19,9 @@ router.get('/', function(req, res) {
 });
 
 router.post('/', function(req, res) {
-  if (req.body) {
-    console.dir(req.body);
+  console.log('Device is mobile.');
 
-    var user = new User({
-      userName: req.body.userName,
-         email: req.body.email
-    });
-
-    user.save(function(err, user) {
-      if (err) console.error(err);
-      user.greet();
-    });
-
-    User.find(function(err, users) {
-          if (err) return console.error(err);
-          console.log(users);
-        });
-  }
-  return res.redirect('/about');
-});
-
-//About page..
-router.get('/about', function(req, res) {
-  res.render('about');
+  return res.redirect(301, '/construction');
 });
 
 //Map page..
@@ -53,6 +32,17 @@ router.get('/map', function(req, res) {
 //Archives page..
 router.get('/archives', function(req, res) {
   res.render('archives');
+});
+
+//mobileConstruction page..
+router.get('/mobileConstruction', function(req, res) {
+  console.log('Device is mobile');
+  res.redirect('/map');
+});
+
+//mobileConstruction page..
+router.get('/construction', function(req, res) {
+  res.render('construction');
 });
 
 

@@ -10,7 +10,7 @@ Author: Eric James Foster
 
 
 //imports..
-use 'elementsJS' el, log, go, scroll, on, off, inspect, xhr
+use 'elementsJS' el, log, go, scroll, on, off, inspect, xhr, isMobile
 
 
 
@@ -111,6 +111,13 @@ function animateHeader() {
 go
 (function() {
   //
+  if (isMobile()) {
+    log('Device is mobile.');
+    //
+    // xhr('/mobileConstruction');  TODO: Figure this out.....
+    location = '/construction';
+  }
+
   let _parallax_ = <'#parallax'>;
   //Set listener on parallax container, because it is preventing the scroll event from bubbling..
   on('scroll', _parallax_, animateHeader);
