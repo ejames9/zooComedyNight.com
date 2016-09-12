@@ -1,0 +1,88 @@
+/*
+_respond.scss
+
+These are the responsive styles for the zooComedyNight.com
+web application..
+
+Author: Eric James Foster
+*/
+/*
+Color variables
+==================>>>
+*/
+/*
+Font variables
+==================>>>
+*/
+/*
+Misc. variables
+==================>>>
+*/
+/*
+Responsive Design+++++++++++++++++++======================>>>>
+--Media Queries--------------------*/
+@media screen and (min-width: 1500px) {
+  /*
+  Cover
+  --------*/
+  .allFolks {
+    font-size: 134px; }
+  #presents {
+    left: 300px;
+    top: 120px; }
+  #comedy {
+    left: 240px;
+    top: 630px; }
+  #atZoo {
+    font-size: 76px;
+    left: 750px;
+    top: 840px; }
+  #n3 {
+    font-size: 362px;
+    top: 335px;
+    left: 1300px; }
+  #coverDate {
+    right: 60px;
+    top: 350px;
+    font-size: 42px;
+    -webkit-text-stroke: 0.5px #0b0b0b; }
+  #coverLocation {
+    float: right;
+    right: 120px;
+    top: 455px;
+    font-size: 30px;
+    text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b;
+    -webkit-text-stroke: 0.5px #0b0b0b; }
+  #coverLocation2 {
+    float: right;
+    right: 10px;
+    top: 495px;
+    font-size: 30px;
+    text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b;
+    -webkit-text-stroke: 0.5px #0b0b0b; }
+  #scrollIndicatorL {
+    left: 100px;
+    top: 900px; }
+  #scrollIndicatorR {
+    right: 40px;
+    top: 900px; }
+  /*
+  Headliner
+  ----------*/
+  #caitW {
+    bottom: 30px; }
+  #caitWText {
+    left: 200px; }
+  #sinceBadge {
+    left: 310px; }
+  /*
+  Cause
+  -------*/
+  #altaLogo {
+    position: absolute;
+    height: 550px;
+    width: 900px;
+    top: 1560px;
+    left: 515px;
+    opacity: .15;
+    border-radius: 20px; } }

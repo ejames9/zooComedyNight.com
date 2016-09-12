@@ -1,0 +1,152 @@
+
+/*
+_respond.scss
+
+These are the responsive styles for the zooComedyNight.com
+web application..
+
+Author: Eric James Foster
+*/
+
+
+
+
+
+/*
+Color variables
+==================>>>
+*/
+
+$bg: #0b0b0b;
+$fg: #ede5d0;
+$at-zoo: #e09724;
+$num-3: #8f8f8f;
+$trans: transparent;
+$orange: #e37c30;
+$red: #c3242d;
+
+/*
+Font variables
+==================>>>
+*/
+
+$fresca: fresca;
+$headers: fjalla one;
+$pGraphs: inconsolata;
+
+/*
+Misc. variables
+==================>>>
+*/
+
+$all: 100%;
+$outline-black: -0.5px -0.5px 0 $bg, 0.5px -0.5px 0 $bg, -0.5px 0.5px 0 $bg, 0.5px 0.5px 0 $bg;
+
+
+
+
+/*
+Responsive Design+++++++++++++++++++======================>>>>
+--Media Queries--------------------*/
+@media screen and (min-width: 1500px) {
+  //
+  /*
+  Cover
+  --------*/
+
+  .coverText {
+
+  }
+
+  .allFolks {
+    font-size: 134px;
+  }
+
+  #presents {
+    left: 300px;
+    top: 120px;
+  }
+
+  #comedy {
+    left: 240px;
+    top: 630px;
+  }
+
+  #atZoo {
+    font-size: 76px;
+    left: 750px;
+    top: 840px;
+  }
+
+  #n3 {
+    font-size: 362px;
+    top: 335px;
+    left: 1300px;
+  }
+
+  #coverDate {
+    right: 60px;
+    top: 350px;
+    font-size: 42px;
+    -webkit-text-stroke: 0.5px $bg;
+  }
+
+  #coverLocation {
+    float: right;
+    right: 120px;
+    top: 455px;
+    font-size: 30px;
+    text-shadow: $outline-black;
+    -webkit-text-stroke: 0.5px $bg;
+  }
+
+  #coverLocation2 {
+    float: right;
+    right: 10px;
+    top: 495px;
+    font-size: 30px;
+    text-shadow: $outline-black;
+    -webkit-text-stroke: 0.5px $bg;
+  }
+
+  #scrollIndicatorL {
+    left: 100px;
+    top: 900px;
+  }
+
+  #scrollIndicatorR {
+    right: 40px;
+    top: 900px;
+  }
+
+  /*
+  Headliner
+  ----------*/
+
+  #caitW {
+    bottom: 30px;
+
+  }
+  #caitWText {
+    left: 200px;
+  }
+
+  #sinceBadge {
+    left: 310px;
+  }
+
+
+  /*
+  Cause
+  -------*/
+
+  #altaLogo  {
+    position: absolute;
+    height: 550px;
+    width: 900px;
+    top: 1560px;
+    left: 515px;
+    opacity: .15;
+    border-radius: 20px;
+  }
+}
