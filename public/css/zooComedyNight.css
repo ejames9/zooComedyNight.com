@@ -1,5 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Fresca|Oswald';
-@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Fjalla+One|Inconsolata:400,700|Josefin+Slab|Maven+Pro|Pathway+Gothic+One|Playfair+Display|Questrial|Roboto+Slab|Rokkitt';
+@import 'https://fonts.googleapis.com/css?family=Fresca|Oswald|Fjalla+One|Inconsolata:400,700';
 #fours {
   font-family: quietZoo;
   font-size: 372px;
@@ -169,72 +168,6 @@ Font variables
     font-size: 48px; }
   #archives-text-content p {
     font-size: 22px; }
-
-/*
-_respond.scss
-
-These are the responsive styles for the zooComedyNight.com
-web application..
-
-Author: Eric James Foster
-*/
-/*
-Color variables
-==================>>>
-*/
-/*
-Font variables
-==================>>>
-*/
-/*
-Misc. variables
-==================>>>
-*/
-/*
-Responsive Design+++++++++++++++++++======================>>>>
---Media Queries--------------------*/
-@media screen and (min-width: 1500px) {
-  .allFolks {
-    font-size: 184px; }
-  #presents {
-    left: 300px;
-    top: 280px; }
-  #comedy {
-    left: 280px;
-    top: 460px; }
-  #atZoo {
-    font-size: 66px;
-    left: 530px;
-    top: 600px; }
-  #n3 {
-    font-size: 262px;
-    top: 255px;
-    left: 960px; }
-  #coverDate {
-    right: 60px;
-    top: 310px;
-    font-size: 27px;
-    -webkit-text-stroke: 0.5px #0b0b0b; }
-  #coverLocation {
-    float: right;
-    right: 110px;
-    top: 365px;
-    font-size: 20px;
-    text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b;
-    -webkit-text-stroke: 0.5px #0b0b0b; }
-  #coverLocation2 {
-    float: right;
-    right: 45px;
-    top: 395px;
-    font-size: 20px;
-    text-shadow: -0.5px -0.5px 0 #0b0b0b, 0.5px -0.5px 0 #0b0b0b, -0.5px 0.5px 0 #0b0b0b, 0.5px 0.5px 0 #0b0b0b;
-    -webkit-text-stroke: 0.5px #0b0b0b; }
-  #scrollIndicatorL {
-    left: 100px;
-    top: 650px; }
-  #scrollIndicatorR {
-    right: 40px;
-    top: 650px; } }
 
 /*
 zooComedyNight.scss
