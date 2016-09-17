@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Fresca|Oswald';
-@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Fjalla+One|Inconsolata|Josefin+Slab|Maven+Pro|Pathway+Gothic+One|Playfair+Display|Questrial|Roboto+Slab|Rokkitt';
+@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Fjalla+One|Inconsolata:400,700|Josefin+Slab|Maven+Pro|Pathway+Gothic+One|Playfair+Display|Questrial|Roboto+Slab|Rokkitt';
 #fours {
   font-family: quietZoo;
   font-size: 372px;
@@ -652,6 +652,8 @@ Section 3, Event Info
       color: #c3242d;
       margin-bottom: 0px; }
   #eventText p {
+    font-size: 16px;
+    font-weight: 700;
     -webkit-text-stroke: .25px black;
     margin-bottom: 7px; }
 
@@ -875,6 +877,9 @@ Reusable Classes
 
 .primary {
   color: #ede5d0; }
+
+.primary2 {
+  color: #8f887e; }
 
 .at-zoo {
   color: #e09724; }
