@@ -1,0 +1,158 @@
+/*
+_sponsors.scss
+
+This file contains style markup for the sponsors page of the
+zooComedyNight.com web app..
+
+Author: Eric James Foster
+*/
+
+
+
+
+/*
+Font variables
+==================>>>
+*/
+
+$black: #0b0b0b;
+$white: #ede5d0;
+$yellow: #e09724;
+$grey: #8f8f8f;
+$trans: transparent;
+$orange: #e37c30;
+$red: #c3242d;
+
+/*
+Font variables
+==================>>>
+*/
+
+$fresca: fresca;
+$headers: fjalla one;
+$pGraphs: inconsolata;
+
+
+
+
+#laughing-leo-backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: .09;
+  z-index: 9;
+}
+
+#sponsors-text {
+  position: relative;
+  top: 12%;
+
+  h1 {
+    font-family: $fresca;
+    font-size: 50px;
+    color: $yellow;
+  }
+  z-index: 10;
+}
+
+#BOB {
+  position: relative;
+  float: left;
+  margin-left: 40px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  height: 200px;
+  width: 500px;
+  top: 120px;
+  border: 4px solid yellow;
+  z-index: 10;
+}
+
+#deschutes {
+  position: relative;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 25px;
+  height: 230px;
+  width: 315px;
+  top: 120px;
+  z-index: 10;
+}
+
+#AGC {
+  position: relative;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 25px;
+  top: 120px;
+  z-index: 10;
+}
+
+#milikin {
+  position: relative;
+  float: left;
+  clear: both;
+  margin-left: 100px;
+  top: 120px;
+  z-index: 10;
+}
+
+#c2S {
+  position: relative;
+  float: left;
+  margin-left: 40px;
+  top: 120px;
+  z-index: 10;
+  img {
+    border-radius: 58%;
+    height: 180px;
+    width: 300px;
+  }
+  p {
+    color: white;
+  }
+}
+
+#saffron {
+  position: relative;
+  float: left;
+  margin-left: 40px;
+  top: 120px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+#katu {
+  position: relative;
+  float: left;
+  margin-left: 40px;
+  top: 120px;
+  height: 180px;
+  width: 200px;
+  border-radius: 20%;
+  z-index: 10;
+}
+
+#kBarth {
+  position: relative;
+  float: left;
+  clear: both;
+  margin-left: 40px;
+  top: 120px;
+  border-radius: 50%;
+  text-align: left;
+  margin-top: 20px;
+  z-index: 10;
+  h4 {
+    font-family: $fresca;
+    color: $yellow;
+    font-size: 26px;
+  }
+  h2 {
+    font-family: $headers;
+    color: $orange;
+    font-size: 40px;
+  }
+}

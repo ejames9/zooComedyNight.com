@@ -3,6 +3,8 @@
 @import '_404';
 @import '_contact';
 @import '_archives';
+@import '_sponsors';
+
 
 
 /*
@@ -785,6 +787,18 @@ Footer Styles
 //     font-family: $pGraphs;
 //   }
 // }
+
+#vos {
+  position: relative;
+  bottom: 60px;
+  font-family: $fresca;
+  font-size: 24px;
+  color: $red;
+}
+#vos:hover {
+  text-decoration: underline;
+  color: $red;
+}
 
 #tixBtn {
   position: relative;

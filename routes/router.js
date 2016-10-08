@@ -34,6 +34,11 @@ router.get('/archives', function(req, res) {
   res.render('archives');
 });
 
+//Sponsors page..
+router.get('/sponsors', function(req, res) {
+  res.render('sponsors');
+});
+
 //mobileConstruction page..
 router.get('/mobileConstruction', function(req, res) {
   console.log('Device is mobile');
