@@ -292,6 +292,28 @@ Font variables
     color: #e37c30;
     font-size: 40px; }
 
+#JMI {
+  position: relative;
+  float: left;
+  clear: both;
+  margin-left: 100px;
+  top: 120px;
+  z-index: 10; }
+  #JMI img {
+    border-radius: 65%; }
+  #JMI p {
+    color: white; }
+
+#eastsideDist {
+  position: relative;
+  height: 200px;
+  width: 350px;
+  float: left;
+  margin-left: 100px;
+  top: 120px;
+  border-radius: 5%;
+  z-index: 10; }
+
 /*
 zooComedyNight.scss
 
